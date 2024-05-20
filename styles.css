@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #ff6e7f;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to top, #040706, #142723, #5f8d7e, #040706, #e2f1e7); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #040706 25%, 
+    #142723 50%, #5f8d7e, #e2f1e7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
