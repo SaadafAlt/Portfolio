@@ -11,6 +11,10 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #040706 20%, 
-    #0f1817 60%, #152520, #223d34, #4e7265);
+    background: linear-gradient(to bottom, 
+    #040706 20%, 
+    #0f1817 60%, 
+    #152520, 
+    #223d34,
+    #4e7265);
 }
