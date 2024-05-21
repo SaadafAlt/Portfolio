@@ -1,3 +1,19 @@
+:root {
+    --clay-green: #739A78;
+    --glass-green-1: #006A4E;
+    --glass-green-2: #6E9A8E;
+    --dark-grey-green: #121614;
+    --tiffany-glass: #95D1C1;
+    --fresh-blood: #6A0000;
+}
+
+@font-face {
+    font-family: 'Banquise';
+    src: url('/fonts/Banquise-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *,
 ::before,
 ::after {
@@ -8,13 +24,19 @@
 
 html {
     height: 100%;
+    font-size: 62.5%;
 }
 
 body {
-    background: linear-gradient(to bottom, 
-    #040706 20%, 
-    #0f1817 60%, 
-    #152520, 
-    #223d34,
-    #4e7265);
+    background: linear-gradient(to bottom,
+            #040706 20%,
+            #0f1817 60%,
+            #152520,
+            #223d34,
+            #4e7265);
+
+
+    font-family: 'Banquise', sans-serif;
+    color: whitesmoke;
+    font-size: 5rem;
 }
