@@ -50,13 +50,11 @@ body {
 /* Id's */
 #section-nav {
     margin: 2rem 5rem 0 5rem;
-    border: 2px dashed rgba(0, 255, 0, 0.466);
 }
 
 #nav {
     display: flex;
     justify-content: space-between;
-    
     align-items: center;
 }
 
@@ -66,7 +64,6 @@ body {
     padding: 0.12rem 2rem;
     border-radius: 3px;
     column-gap: 1.75rem;
-    border: 1px dotted yellow;
 }
 
 #nav-hr {
@@ -83,9 +80,9 @@ body {
 }
 
 #location {
-    color: whitesmoke;
+    color: var(--slate-grey);
     font-size: 0.85em;
-    border: 1px dotted yellow;;
+    padding-right: 0.5em;
 }
 
 /* Classes */
