@@ -50,17 +50,23 @@ body {
 /* Id's */
 #section-nav {
     margin: 2rem 5rem 0 5rem;
-    /* border: 2px dashed red; */
+    border: 2px dashed rgba(0, 255, 0, 0.466);
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
 }
 
 #nav-ul {
     display: inline-flex;
     background-color: var(--glass-green-2);
-    /* opacity: 54%; */
     padding: 0.12rem 2rem;
     border-radius: 3px;
-    /* border: 1px dotted yellow; */
     column-gap: 1.75rem;
+    border: 1px dotted yellow;
 }
 
 #nav-hr {
@@ -69,12 +75,17 @@ body {
     border-color: var(--fresh-blood);
     background-color: var(--fresh-blood);
     height: 3.6px;
-    /* border: 3.9px solid var(--fresh-blood); */
 }
 
 #section-intent {
     position: relative;
     top: 4rem;
+}
+
+#location {
+    color: whitesmoke;
+    font-size: 0.85em;
+    border: 1px dotted yellow;;
 }
 
 /* Classes */
