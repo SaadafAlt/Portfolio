@@ -53,7 +53,7 @@ body {
     font-size: 1.4rem;
 }
 
-/* Id's */
+/* navbar */
 #section-nav {
     margin: 2rem 5rem 0 5rem;
 }
@@ -72,12 +72,15 @@ body {
     column-gap: 1.75rem;
 }
 
-#nav-hr {
-    border-style: solid;
-    margin-top: 1.25rem;
-    border-color: var(--blood);
-    background-color: var(--blood);
-    height: 3.6px;
+.nav-li {
+    list-style: none;
+    color: var(--moss-green);
+    opacity: 100%;
+}
+
+.nav-li > a {
+    color: var(--moss-green);
+    text-decoration: none;
 }
 
 #location {
@@ -86,42 +89,71 @@ body {
     padding-right: 0.5em;
 }
 
-#div-home {
-    margin: 8rem 5rem 0 5rem;
+#nav-hr {
+    border-style: solid;
+    margin-top: 1.25rem;
+    border-color: var(--blood);
+    background-color: var(--blood);
+    height: 3.6px;
+}
+
+/* introduction segment */
+#container-home {
+    margin: 7rem 5rem 0rem 5rem;
     height: 60vh;
     border: 2px solid var(--blood);
 }
 
-#profile {
-    width: 28vw;
-    border: 2px solid lime;
+#header-name {
+    font-family: "CONSOLA", "JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 4.25em;
 }
 
-#p-home-span {
+#profile {
+    position: relative;
+    top: -1.8em;
+    left: 4em;
+    width: 380px;
+    height: 468px;
+    z-index: -1;
+    object-fit: contain;
+    border: 2px dashed orangered;
+}
+
+#intro {
+    font-family: "CONSOLA","JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 3em;
+    position: relative;
+    top: -12em;
+    left: 11em;
+    width: 59%;
+    border: 2px dashed var(--tiffany-glass);
+}
+
+#intro-span {
     color: var(--glass-green-1);
 }
 
 #ul-social-icons {
-    
+    position: relative;
+    width: 250px;
+    top: -5em;
+    left: 237px;
+    display: flex;
+    border: 2px dashed palevioletred;
 }
 
-/* Classes */
-.nav-li {
+.li-social-icons { 
+    font-size: 4.25em;
     list-style: none;
-    color: var(--moss-green);
-    opacity: 100%;
-    /* border: 1px solid orange; */
-}
-
-.nav-li>a {
-    color: var(--moss-green);
-    text-decoration: none;
+    border: 1px dashed orangered;
 }
 
 .container-text {
     color: var(--moss-green);
     font-size: 1.75rem;
-    /* border: 1px dashed red; */
 }
 
 .container {
@@ -150,16 +182,4 @@ body {
 
 .container :nth-child(2) {
     margin-top: 4rem;
-}
-
-.p-home-header {
-    font-family: "CONSOLA", "JetBrains Mono", monospace;
-    font-weight: bold;
-    font-size: 4em;
-}
-
-.p-home {
-    font-family: "CONSOLA","JetBrains Mono", monospace;
-    font-weight: bold;
-    font-size: 3em;
 }
