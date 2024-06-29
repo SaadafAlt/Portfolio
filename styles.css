@@ -7,17 +7,25 @@
     --moss-green: #2EC57C;
     --dark-grey-green: #121614;
     --tiffany-glass: #95D1C1;
-    --fresh-blood: #6A0000;
+    --blood: #6A0000;
+    --tomato: #9D0000;
     --slate-grey: #C7C9C9;
     --offGrey-btn-theme: #2E4339;
 }
 
-/* @font-face {
-    font-family: 'Banquise';
-    src: url('/fonts/Banquise-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
+/* Define Consolas font */
+@font-face {
+    font-family: 'Consolas';
+    src: url(./assets/fonts/Consolas.ttf) format('truetype');
+    font-display: swap; /* Optional for better font loading */
+}
+
+/* Define CONSOLA font */
+@font-face {
+    font-family: 'CONSOLA';
+    src: url(./assets/fonts/CONSOLA.TTF) format('truetype');
+    font-display: swap;
+}
 
 *,
 ::before,
@@ -41,9 +49,7 @@ body {
             #223d34,
             #4e7265);
 
-
-    /* font-family: 'Banquise', sans-serif; */
-    color: whitesmoke;
+            color: var(--moss-green);
     font-size: 1.4rem;
 }
 
@@ -69,20 +75,34 @@ body {
 #nav-hr {
     border-style: solid;
     margin-top: 1.25rem;
-    border-color: var(--fresh-blood);
-    background-color: var(--fresh-blood);
+    border-color: var(--blood);
+    background-color: var(--blood);
     height: 3.6px;
-}
-
-#section-intent {
-    position: relative;
-    top: 4rem;
 }
 
 #location {
     color: var(--slate-grey);
     font-size: 0.85em;
     padding-right: 0.5em;
+}
+
+#div-home {
+    margin: 8rem 5rem 0 5rem;
+    height: 60vh;
+    border: 2px solid var(--blood);
+}
+
+#profile {
+    width: 28vw;
+    border: 2px solid lime;
+}
+
+#p-home-span {
+    color: var(--glass-green-1);
+}
+
+#ul-social-icons {
+    
 }
 
 /* Classes */
@@ -130,4 +150,16 @@ body {
 
 .container :nth-child(2) {
     margin-top: 4rem;
+}
+
+.p-home-header {
+    font-family: "CONSOLA", "JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.p-home {
+    font-family: "CONSOLA","JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 3em;
 }
