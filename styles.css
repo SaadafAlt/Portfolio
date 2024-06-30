@@ -1,6 +1,7 @@
 :root {
     --clay-green: #739A78;
-    --glass-green-1: #006A4E;
+    --glass-container-border-1: #006A4E;
+    --glass-container-border-2: #00D099;
     --glass-green-2: #052E23;
     --glass-green-3: #6E9A8E;
     --glass-green-border: #042F24;
@@ -17,7 +18,8 @@
 @font-face {
     font-family: 'Consolas';
     src: url(./assets/fonts/Consolas.ttf) format('truetype');
-    font-display: swap; /* Optional for better font loading */
+    font-display: swap;
+    /* Optional for better font loading */
 }
 
 /* Define CONSOLA font */
@@ -49,7 +51,7 @@ body {
             #223d34,
             #4e7265);
 
-            color: var(--moss-green);
+    color: var(--moss-green);
     font-size: 1.4rem;
 }
 
@@ -78,9 +80,18 @@ body {
     opacity: 100%;
 }
 
-.nav-li > a {
+.nav-li>a {
     color: var(--moss-green);
     text-decoration: none;
+}
+
+.nav-li>a:hover {
+    color: rgba(239, 243, 237, 0.952);
+    transition: 0.5s;
+}
+
+.nav-li>a:not(:hover) {
+    transition: 0.5s;
 }
 
 #location {
@@ -97,7 +108,7 @@ body {
     height: 3.6px;
 }
 
-/* introduction segment */
+/* introduction */
 #container-home {
     margin: 7em auto 0em auto;
     height: 60vh;
@@ -122,7 +133,7 @@ body {
 }
 
 #intro {
-    font-family: "CONSOLA","JetBrains Mono", monospace;
+    font-family: "CONSOLA", "JetBrains Mono", monospace;
     font-weight: bold;
     font-size: 4em;
     position: relative;
@@ -134,7 +145,7 @@ body {
 }
 
 #intro-span {
-    color: var(--glass-green-1);
+    color: var(--glass-container-border-1);
 }
 
 #ul-social-icons {
@@ -146,7 +157,7 @@ body {
     /* border: 2px dashed palevioletred; */
 }
 
-.li-social-icons { 
+.li-social-icons {
     font-size: 5.1em;
     list-style: none;
     /* border: 1px dashed orangered; */
@@ -157,30 +168,37 @@ body {
     font-size: 1.75rem;
 }
 
+
+
+/* container */
 .container {
+    /* Ensures the pseudo-element is positioned relative to the container */
+    position: relative;
     height: 400px;
     width: 650px;
     margin: auto;
     padding: 2.5rem 2rem;
-    border: 3px solid var(--glass-green-border);
     border-radius: 10px;
-    background: linear-gradient(160deg, 
-    rgba(76, 107, 99, 0.0844712885154062) 8%, 
-    rgba(76, 107, 99, 0.1444712885154062) 50%, 
-    rgba(110, 154, 142, 0.2063200280112045) 80%, 
-    rgba(149, 209, 193, 0.2403256302521008) 100%);
+    background: linear-gradient(rgba(127, 180, 166, 0.23) 40%,
+            rgba(55, 78, 72, 0.23) 100%);
 }
 
-/* Pseudoselectors */
-.nav-li>a:hover {
-    color: rgba(239, 243, 237, 0.952);
-    transition: 0.5s;
-}
-
-.nav-li>a:not(:hover) {
-    transition: 0.5s;
-}
-
-.container :nth-child(2) {
-    margin-top: 4rem;
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px; /* Match the border-radius of the container */
+    padding: 4px;        /* Adjust padding to match the border width */
+    background: linear-gradient(to bottom, var(--glass-container-border-1) 0%, var(--glass-container-border-2) 100%);
+    -webkit-mask:
+        /* Ensures the border-radius is applied */
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: subtract;
+    /* Ensures the pseudo-element doesn't interfere with container content */
+    pointer-events: none;
 }
