@@ -56,7 +56,7 @@ body {
 }
 
 /* navbar */
-#section-nav {
+#navbar {
     margin: 2rem 5rem 0 5rem;
 }
 
@@ -108,12 +108,12 @@ body {
     height: 3.6px;
 }
 
-/* introduction */
+/* home */
 #container-home {
     margin: 7em auto 0em auto;
     height: 60vh;
     width: 90vw;
-    /* border: 2px solid var(--blood); */
+    border: 2px solid var(--blood);
 }
 
 #header-name {
@@ -168,19 +168,18 @@ body {
     font-size: 1.75rem;
 }
 
-
-
 /* container */
 .container {
     /* Ensures the pseudo-element is positioned relative to the container */
     position: relative;
-    height: 400px;
-    width: 650px;
+    /* height: 400px;
+    width: 650px; */
     margin: auto;
     padding: 2.5rem 2rem;
     border-radius: 10px;
     background: linear-gradient(rgba(127, 180, 166, 0.23) 40%,
             rgba(55, 78, 72, 0.23) 100%);
+    z-index: -2;
 }
 
 .container::before {
