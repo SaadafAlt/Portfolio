@@ -17,7 +17,7 @@
 /* Define Consolas font */
 @font-face {
     font-family: 'Consolas';
-    src: url(./assets/fonts/Consolas.ttf) format('truetype');
+    src: url(/assets/fonts/Consolas.ttf) format('truetype');
     font-display: swap;
     /* Optional for better font loading */
 }
@@ -25,7 +25,7 @@
 /* Define CONSOLA font */
 @font-face {
     font-family: 'CONSOLA';
-    src: url(./assets/fonts/CONSOLA.TTF) format('truetype');
+    src: url(/assets/fonts/CONSOLA.TTF) format('truetype');
     font-display: swap;
 }
 
