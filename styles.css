@@ -109,13 +109,6 @@ body {
 }
 
 /* home */
-#container-home {
-    margin: 7em auto 0em auto;
-    height: 60vh;
-    width: 90vw;
-    border: 2px solid var(--blood);
-}
-
 #header-name {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     font-weight: bold;
@@ -137,8 +130,8 @@ body {
     font-weight: bold;
     font-size: 4em;
     position: relative;
-    top: -9.1em;
-    left: 10em;
+    top: -9.8em;
+    left: 9.5em;
     width: 68%;
     padding: 0 1em;
     /* border: 2px dashed var(--tiffany-glass); */
@@ -163,23 +156,32 @@ body {
     /* border: 1px dashed orangered; */
 }
 
-.container-text {
+i.bx {
     color: var(--moss-green);
-    font-size: 1.75rem;
+}
+
+i.bx:hover {
+    color: var(--slate-grey);
+    transition: 0.5s;
+}
+
+i.bx:not(:hover) {
+    transition: 0.5s;
 }
 
 /* container */
 .container {
     /* Ensures the pseudo-element is positioned relative to the container */
     position: relative;
-    /* height: 400px;
-    width: 650px; */
-    margin: auto;
+    height: 65vh;
+    width: 90vw;
+    margin: 7em auto 0em auto;
     padding: 2.5rem 2rem;
     border-radius: 10px;
-    background: linear-gradient(rgba(127, 180, 166, 0.23) 40%,
-            rgba(55, 78, 72, 0.23) 100%);
-    z-index: -2;
+    background: linear-gradient(360deg,
+        rgba(55, 78, 72, 0.23) 40%,
+        rgba(127, 180, 166, 0.43) 100%);
+    z-index: 0;
 }
 
 .container::before {
