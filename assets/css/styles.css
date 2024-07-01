@@ -179,6 +179,7 @@ i.bx:not(:hover) {
     transition: 0.5s;
 }
 
+
 /* container */
 .container-home {
     /* Ensures the pseudo-element is positioned relative to the container */
