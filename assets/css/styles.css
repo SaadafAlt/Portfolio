@@ -1,7 +1,9 @@
 :root {
     --clay-green: #739A78;
-    --glass-container-border-1: #006A4E;
-    --glass-container-border-2: #00D099;
+    --container-color-1: rgba(55, 78, 72, 0.23);
+    --container-color-2: rgba(127, 180, 166, 0.43);
+    --container-border-1: #006A4E;
+    --container-border-2: #00D099;
     --glass-green-2: #052E23;
     --glass-green-3: #6E9A8E;
     --glass-green-border: #042F24;
@@ -39,8 +41,8 @@
 
 html {
     height: 100%;
-    font-size: 62.5%;
-    font-family: "JetBrains Mono", monospace;
+    font-size: 62.5% !important;
+    font-family: "CONSOLA", "JetBrains Mono", monospace;
 }
 
 body {
@@ -58,26 +60,26 @@ body {
 /* navbar */
 #navbar {
     margin: 2rem 5rem 0 5rem;
+    font-family: 'CONSOLA';
 }
 
 #nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 #nav-ul {
     display: inline-flex;
+    margin-bottom: unset;
+    align-self: center;
     background-color: var(--glass-green-2);
-    padding: 0.12rem 2rem;
+    padding: 0 2rem;
     border-radius: 3px;
     column-gap: 1.75rem;
 }
 
 .nav-li {
     list-style: none;
-    color: var(--moss-green);
-    opacity: 100%;
 }
 
 .nav-li>a {
@@ -98,6 +100,8 @@ body {
     color: var(--slate-grey);
     font-size: 0.85em;
     padding-right: 0.5em;
+    margin-bottom: unset;
+    align-self: center;
 }
 
 #nav-hr {
@@ -105,7 +109,7 @@ body {
     margin-top: 1.25rem;
     border-color: var(--blood);
     background-color: var(--blood);
-    height: 3.6px;
+    height: 2.6px;
 }
 
 /* home */
@@ -138,7 +142,7 @@ body {
 }
 
 #intro-span {
-    color: var(--glass-container-border-1);
+    color: var(--container-border-1);
 }
 
 #ul-social-icons {
@@ -178,9 +182,9 @@ i.bx:not(:hover) {
     margin: 7em auto 0em auto;
     padding: 2.5rem 2rem;
     border-radius: 10px;
-    background: linear-gradient(360deg,
-        rgba(55, 78, 72, 0.23) 40%,
-        rgba(127, 180, 166, 0.43) 100%);
+    background: linear-gradient(200deg,
+        var(--container-color-1) 40%,
+        var(--container-color-2) 100%);
     z-index: 0;
 }
 
@@ -193,7 +197,7 @@ i.bx:not(:hover) {
     bottom: 0;
     border-radius: 10px; /* Match the border-radius of the container */
     padding: 4px;        /* Adjust padding to match the border width */
-    background: linear-gradient(to bottom, var(--glass-container-border-1) 0%, var(--glass-container-border-2) 100%);
+    background: linear-gradient(to bottom, var(--container-border-1) 0%, var(--container-border-2) 100%);
     -webkit-mask:
         /* Ensures the border-radius is applied */
         linear-gradient(#fff 0 0) content-box,
