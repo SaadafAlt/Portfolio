@@ -66,7 +66,7 @@ body {
 #nav {
     display: flex;
     justify-content: space-between;
-    font-size: 1.25em;
+    font-size: 1.3em;
 }
 
 #nav-ul {
@@ -110,7 +110,7 @@ body {
     margin-top: 1.25rem;
     border-color: var(--blood);
     background-color: var(--blood);
-    height: 2.6px;
+    height: 2.5px;
 }
 
 /* home */
@@ -143,7 +143,7 @@ body {
     top: -11.5em;
     left: 10em;
     width: 68%;
-    padding: 0 1em;
+    padding: 0 1em 0 1.2em;
     /* border: 2px dashed var(--tiffany-glass); */
 }
 
