@@ -58,17 +58,17 @@ body {
 }
 
 /* navbar */
-#navbar {
+#navbarr {
     margin: 2rem 5rem 0 5rem;
     font-family: 'CONSOLA';
 }
 
-#nav {
+#navv {
     display: flex;
     justify-content: space-between;
 }
 
-#nav-ul {
+#nav-ull {
     display: inline-flex;
     margin-bottom: unset;
     align-self: center;
@@ -174,7 +174,7 @@ i.bx:not(:hover) {
 }
 
 /* container */
-.container {
+.container-home {
     /* Ensures the pseudo-element is positioned relative to the container */
     position: relative;
     height: 65vh;
