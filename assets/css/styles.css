@@ -1,26 +1,32 @@
 :root {
-    --clay-green: #739A78;
     --container-color-1: rgba(55, 78, 72, 0.23);
     --container-color-2: rgba(127, 180, 166, 0.43);
     --container-border-1: #006A4E;
     --container-border-2: #00D099;
+    --container-project-gradient-1: rgba(127, 180, 166, 0.29);
+    --container-project-gradient-2: rgba(55, 78, 72, 0.12);
     --glass-green-2: #052E23;
     --glass-green-3: #6E9A8E;
     --glass-green-border: #042F24;
-    --moss-green: #2EC57C;
-    --dark-grey-green: #121614;
-    --tiffany-glass: #95D1C1;
+    --tiffany: #95D1C1;
     --blood: #6A0000;
     --tomato: #9D0000;
+    /* font colors */
+    --sea-green: #2EC57C;
     --slate-grey: #C7C9C9;
-    --offGrey-btn-theme: #2E4339;
+    /* not used */
+    --seafoam-green: #93E9BE;
+    --clay-green: #739A78;
+    --stone-green: #2E4339;
+    --blackish-green: #121614;
 }
 
 /* Define Consolas font */
 @font-face {
     font-family: 'Consolas';
     src: url(/assets/fonts/Consolas.ttf) format('truetype');
-    font-display: swap; /* Optional for better font loading */
+    font-display: swap;
+    /* Optional for better font loading */
 }
 
 /* Define CONSOLA font */
@@ -53,7 +59,7 @@ body {
             #223d34,
             #4e7265);
 
-    color: var(--moss-green);
+    color: var(--sea-green);
     font-size: 1.4rem;
 }
 
@@ -84,7 +90,7 @@ body {
 }
 
 .nav-li>a {
-    color: var(--moss-green);
+    color: var(--sea-green);
     text-decoration: none !important;
 }
 
@@ -118,7 +124,7 @@ body {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     font-weight: bold;
     font-size: 6em;
-    color: var(--moss-green);
+    color: var(--sea-green);
     position: relative;
     top: 0.25em;
     /* border: 2px solid var(--tomato); */
@@ -136,7 +142,7 @@ body {
 
 #intro {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
-    color: var(--moss-green);
+    color: var(--sea-green);
     font-weight: bold;
     font-size: 4.5em;
     position: relative;
@@ -167,7 +173,7 @@ body {
 }
 
 i.bx {
-    color: var(--moss-green);
+    color: var(--sea-green);
 }
 
 i.bx:hover {
@@ -190,8 +196,8 @@ i.bx:not(:hover) {
     padding: 1em 4em 1em 4em;
     border-radius: 10px;
     background: linear-gradient(200deg,
-        var(--container-color-1) 40%,
-        var(--container-color-2) 100%);
+            var(--container-color-1) 40%,
+            var(--container-color-2) 100%);
     z-index: 0;
 }
 
@@ -202,8 +208,49 @@ i.bx:not(:hover) {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 10px; /* Match the border-radius of the container */
-    padding: 4px;        /* Adjust padding to match the border width */
+    border-radius: 10px;
+    /* Match the border-radius of the container */
+    padding: 4px;
+    /* Adjust padding to match the border width */
+    background: linear-gradient(to bottom, 
+    var(--container-border-1) 0%, 
+    var(--container-border-2) 100%);
+    -webkit-mask:
+        /* Ensures the border-radius is applied */
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: subtract;
+    /* Ensures the pseudo-element doesn't interfere with container content */
+    pointer-events: none;
+}
+
+.project-container{
+    font-family: "Roboto Flex", "JetBrains Mono", monospace;
+    color: var(--slate-grey);
+    position: relative;
+    height: 360px;
+    width: 452px;
+    margin: 7em auto 0em auto;
+    border-radius: 10px;
+    background: linear-gradient(
+            var(--container-project-gradient-1) 50%,
+            var(--container-project-gradient-2) 100%);
+    z-index: 0;
+    /* border: 2px dotted var(--tomato); */
+}
+
+.project-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    /* Match the border-radius of the container */
+    padding: 4px;
+    /* Adjust padding to match the border width */
     background: linear-gradient(to bottom, var(--container-border-1) 0%, var(--container-border-2) 100%);
     -webkit-mask:
         /* Ensures the border-radius is applied */
@@ -213,4 +260,27 @@ i.bx:not(:hover) {
     mask-composite: subtract;
     /* Ensures the pseudo-element doesn't interfere with container content */
     pointer-events: none;
+}
+
+.stack-wrapper {
+    border: 2px solid slateblue;
+}
+
+.project-text {
+    /* position: relative; */
+    border: 2px dashed hotpink;
+}
+
+.view-project-wrapper {
+    display: flex;
+    color: var(--tiffany);
+    border: 2px dashed yellow;
+}
+
+#i-hyperlink {
+    color: var(--tiffany);
+}
+
+.view-project {
+    
 }
