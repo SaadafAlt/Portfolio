@@ -232,6 +232,7 @@ i.bx:not(:hover) {
     height: 360px;
     width: 452px;
     margin: 7em auto 0em auto;
+    padding: 2em;
     border-radius: 10px;
     background: linear-gradient(
             var(--container-project-gradient-1) 50%,
