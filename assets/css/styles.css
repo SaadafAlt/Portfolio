@@ -20,7 +20,8 @@
 @font-face {
     font-family: 'Consolas';
     src: url(/assets/fonts/Consolas.ttf) format('truetype');
-    font-display: swap; /* Optional for better font loading */
+    font-display: swap;
+    /* Optional for better font loading */
 }
 
 /* Define CONSOLA font */
@@ -39,9 +40,11 @@
 }
 
 html {
-    height: 100%;
     /* font-size: 73.5299% !important; */
-    font-size: 62.5% !important;
+    /* height: 100%; */
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    font-size: 62.5%;
     font-family: "CONSOLA", "JetBrains Mono", monospace;
 }
 
@@ -52,7 +55,6 @@ body {
             #152520,
             #223d34,
             #4e7265);
-
     color: var(--moss-green);
     font-size: 1.4rem;
 }
@@ -114,6 +116,10 @@ body {
 }
 
 /* home */
+#home {
+    border: 2px solid tomato;
+}
+
 #header-name {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     font-weight: bold;
@@ -180,19 +186,20 @@ i.bx:not(:hover) {
 }
 
 
-/* container */
+/* home - container */
 .container-home {
     /* Ensures the pseudo-element is positioned relative to the container */
     position: relative;
     height: 65vh;
     /* width: 83vw; */
-    margin: 7em 20em 0em 20em;
+    margin: 7em 20em;
     padding: 1em 4em 1em 4em;
     border-radius: 10px;
     background: linear-gradient(200deg,
-        var(--container-color-1) 40%,
-        var(--container-color-2) 100%);
+            var(--container-color-1) 40%,
+            var(--container-color-2) 100%);
     z-index: 0;
+    border: 2px dashed hotpink;
 }
 
 .container-home::before {
@@ -202,8 +209,10 @@ i.bx:not(:hover) {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 10px; /* Match the border-radius of the container */
-    padding: 4px;        /* Adjust padding to match the border width */
+    border-radius: 10px;
+    /* Match the border-radius of the container */
+    padding: 4px;
+    /* Adjust padding to match the border width */
     background: linear-gradient(to bottom, var(--container-border-1) 0%, var(--container-border-2) 100%);
     -webkit-mask:
         /* Ensures the border-radius is applied */
