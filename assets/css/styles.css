@@ -45,8 +45,6 @@
 }
 
 html {
-    /* font-size: 73.5299% !important; */
-    /* height: 100%; */
     background-size: 100% 100vh;
     background-repeat: no-repeat;
     font-size: 62.5%;
@@ -125,11 +123,11 @@ body {
 #home {
     border: 2px dashed yellow;
 }
+
 #container-home {
     /* Ensures the pseudo-element is positioned relative to the container */
     position: relative;
     height: 65vh;
-    /* width: 83vw; */
     margin: 8em 16em;
     padding: 1em 4em;
     border-radius: 10px;
@@ -240,53 +238,14 @@ i.bx:not(:hover) {
 
 #projects-text {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
-    color: var(--moss-green);
+    color: var(--sea-green);
     font-weight: bold;
     font-size: 3.5em;
     text-align: justify;
     /* border: 2px dashed lime; */
 }
 
-/* container */
-.container-home {
-    /* Ensures the pseudo-element is positioned relative to the container */
-    position: relative;
-    height: 65vh;
-    /* width: 83vw; */
-    margin: 7em 20em 0em 20em;
-    padding: 1em 4em 1em 4em;
-    border-radius: 10px;
-    background: linear-gradient(200deg,
-            var(--container-color-1) 40%,
-            var(--container-color-2) 100%);
-    z-index: 0;
-}
-
-.container-home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 10px;
-    /* Match the border-radius of the container */
-    padding: 4px;
-    /* Adjust padding to match the border width */
-    background: linear-gradient(to bottom, 
-    var(--container-border-1) 0%, 
-    var(--container-border-2) 100%);
-    -webkit-mask:
-        /* Ensures the border-radius is applied */
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: subtract;
-    /* Ensures the pseudo-element doesn't interfere with container content */
-    pointer-events: none;
-}
-
-.project-container{
+.project-container {
     font-family: "Roboto Flex", "JetBrains Mono", monospace;
     color: var(--slate-grey);
     position: relative;
@@ -322,35 +281,6 @@ i.bx:not(:hover) {
     mask-composite: subtract;
     /* Ensures the pseudo-element doesn't interfere with container content */
     pointer-events: none;
-}
-#projects-text {
-    font-family: "CONSOLA", "JetBrains Mono", monospace;
-    color: var(--moss-green);
-    font-weight: bold;
-    font-size: 3.5em;
-    text-align: justify;
-    /* border: 2px dashed lime; */
-
-}
-
-#projects-text {
-    font-family: "CONSOLA", "JetBrains Mono", monospace;
-    color: var(--moss-green);
-    font-weight: bold;
-    font-size: 3.5em;
-    text-align: justify;
-    /* border: 2px dashed lime; */
-
-}
-
-#projects-text {
-    font-family: "CONSOLA", "JetBrains Mono", monospace;
-    color: var(--moss-green);
-    font-weight: bold;
-    font-size: 3.5em;
-    text-align: justify;
-    /* border: 2px dashed lime; */
-
 }
 
 .stack-wrapper {
