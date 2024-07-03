@@ -295,7 +295,7 @@ body {
 }
 
 .stack-wrapper {
-    border: 1px dashed slateblue;
+    /* border: 1px dashed slateblue; */
 }
 
 .stack-icon {
@@ -303,14 +303,14 @@ body {
 }
 
 .project-text-wrapper {
-    border: 1px dashed lime;
+    /* border: 1px dashed lime; */
 }
 
 .project-title {
     font-size: 2.25em;
     font-weight: 500;
     margin-top: 0.25em;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
 }
 
 .project-desc {
@@ -318,21 +318,27 @@ body {
     font-size: 1.5em;
     font-weight: 200;
     margin-top: 2em;
-    border: 1px dotted darkorchid;
+    /* border: 1px dotted darkorchid; */
 }
 
 .view-project-wrapper {
-    font-size: 1.25em;
+    font-size: 1.3em;
     font-weight: 600;
     display: flex;
     align-content: center;
     color: var(--tiffany);
     margin-top: 2em;
-    border: 1px dashed orangered;
+    /* border: 1px dashed orangered; */
 }
 
 .view-project-wrapper * {
-    border: 1px solid red;
+}
+
+.view-project-wrapper > *:first-child {
+    /* padding-left: 0.5em; */
+    font-size: 1.3em;
+    /* border: 1px solid red; */
+
 }
 
 .view-project {
