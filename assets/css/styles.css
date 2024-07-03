@@ -238,21 +238,23 @@ body {
     font-weight: bold;
     font-size: 3.5em;
     text-align: justify;
+    margin-bottom: unset;
 }
 
 #projects-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid var(--tomato);
+    border: 2px dashed lime;
 }
 
-#projects-container .project-container:first-child {
+/* #projects-container .project-container:first-child {
     margin-left: 7em;
 }
 
 #projects-container .project-container:last-child {
     margin-right: 7em;
-  }
+  } */
 
 .project-container {
     font-family: "Roboto Flex", "JetBrains Mono", monospace;
@@ -260,8 +262,8 @@ body {
     position: relative;
     height: 300px;
     max-height: 360px;
-    width: 452px;
-    margin: 7em 1.25em;
+    width: 375px;
+    margin: 1em 1.25em;
     padding: 2.5em;
     border-radius: 10px;
     background: linear-gradient(
