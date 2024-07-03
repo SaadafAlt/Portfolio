@@ -58,7 +58,7 @@ body {
             #152520,
             #223d34,
             #4e7265);
-
+    background-attachment: fixed;
     color: var(--sea-green);
     font-size: 1.4rem;
 }
@@ -121,9 +121,8 @@ body {
 
 /* home */
 #home {
-    /* border: 2px dashed yellow; */
     padding-top: 2em;
-    
+    /* border: 2px dashed yellow; */
 }
 
 #container-home {
@@ -168,7 +167,6 @@ body {
     color: var(--sea-green);
     position: relative;
     top: 0.25em;
-    border: 2px solid var(--tomato);
 }
 
 #profile {
@@ -179,6 +177,32 @@ body {
     height: 468px;
     z-index: -1;
     object-fit: contain;
+}
+
+#ul-social-icons {
+    position: relative;
+    width: 260px;
+    top: -6.7em;
+    left: 240px;
+    display: flex;
+}
+
+.li-social-icons {
+    font-size: 6.2em;
+    list-style: none;
+}
+
+.social-icon {
+    color: var(--sea-green);
+}
+
+.social-icon:hover {
+    color: var(--slate-grey);
+    transition: 0.5s;
+}
+
+.social-icon:not(:hover) {
+    transition: 0.5s;
 }
 
 #intro {
@@ -196,34 +220,6 @@ body {
 
 #intro-span {
     color: var(--container-border-1);
-}
-
-#ul-social-icons {
-    position: relative;
-    width: 260px;
-    top: -6.7em;
-    left: 240px;
-    display: flex;
-    border: 2px dashed palevioletred;
-}
-
-.li-social-icons {
-    font-size: 6.2em;
-    list-style: none;
-    border: 1px dashed orangered;
-}
-
-.social-icon {
-    color: var(--sea-green);
-}
-
-.social-icon:hover {
-    color: var(--slate-grey);
-    transition: 0.5s;
-}
-
-.social-icon:not(:hover) {
-    transition: 0.5s;
 }
 
 /* projects */
