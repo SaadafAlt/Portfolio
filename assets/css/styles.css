@@ -121,7 +121,9 @@ body {
 
 /* home */
 #home {
-    border: 2px dashed yellow;
+    /* border: 2px dashed yellow; */
+    padding-top: 2em;
+    
 }
 
 #container-home {
@@ -135,7 +137,6 @@ body {
             var(--container-color-1) 40%,
             var(--container-color-2) 100%);
     z-index: 0;
-    border: 2px solid yellow;
 }
 
 #container-home::before {
@@ -227,12 +228,12 @@ body {
 
 /* projects */
 #projects {
-    border: 2px dashed lightskyblue;
+    /* border: 2px dashed lightskyblue; */
 }
 
 #skills-wrapper {
-    margin: 8em 20em;
-    border: 3px dotted blueviolet;
+    margin: 18em 20em;
+    /* border: 3px dotted blueviolet; */
 }
 
 #skills {
@@ -246,7 +247,7 @@ body {
 #projects-container {
     display: flex;
     justify-content: center;
-    border: 2px solid var(--tomato);
+    /* border: 2px solid var(--tomato); */
 }
 
 #projects-container .project-container:first-child {
@@ -296,7 +297,7 @@ body {
 }
 
 .stack-wrapper {
-    border: 1px dashed slateblue;
+    /* border: 1px dashed slateblue; */
 }
 
 .stack-icon {
@@ -304,15 +305,14 @@ body {
 }
 
 .project-text-wrapper {
-    /* position: relative; */
-    border: 1px dashed lime;
+    /* border: 1px dashed lime; */
 }
 
 .project-title {
     font-size: 2.25em;
     font-weight: 500;
     margin-top: 0.25em;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
 }
 
 .project-desc {
@@ -320,7 +320,7 @@ body {
     font-size: 1.5em;
     font-weight: 200;
     margin-top: 2em;
-    border: 1px dotted darkorchid;
+    /* border: 1px dotted darkorchid; */
 }
 
 .view-project-wrapper {
@@ -330,11 +330,11 @@ body {
     align-content: center;
     color: var(--tiffany);
     margin-top: 2em;
-    border: 1px dashed orangered;
+    /* border: 1px dashed orangered; */
 }
 
 .view-project-wrapper * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .view-project {
