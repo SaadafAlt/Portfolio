@@ -264,8 +264,7 @@ body {
     width: 375px;
     padding: 2.5em;
     border-radius: 10px;
-    background: linear-gradient(
-            var(--container-project-gradient-1) 50%,
+    background: linear-gradient(var(--container-project-gradient-1) 50%,
             var(--container-project-gradient-2) 100%);
     z-index: 0;
 }
@@ -342,4 +341,47 @@ body {
 }
 
 /* about */
-#about {}
+#about {
+    margin-top: 10em;
+    border: 3px solid slateblue;
+}
+
+.about-text-wrapper {
+    display: flex;
+    border: 2px solid red;
+}
+
+.about-text {
+    font-family: "CONSOLA", "JetBrains Mono", monospace;
+    color: var(--sea-green);
+    text-align: justify;
+    margin: 1em auto;
+    padding: 0 5em;
+    font-weight: bold;
+    font-size: 3.25em;
+    border: 1px solid lime;
+
+}
+
+#exempli-gratia {
+    position: absolute;
+    /* transform: rotate(270deg); */
+    color: var(--slate-grey);
+    border: 2px solid var(--container-border-2);
+    font-size: 1.25em;
+    top: 170em;
+    /* font-style: italic; */
+}
+
+#about-imgs-div {
+    display: flex;
+    justify-content: center;
+    border: 2px solid greenyellow;
+}
+
+.about-img {
+    max-width: 40vw;
+    object-fit: cover;
+    
+    
+}
