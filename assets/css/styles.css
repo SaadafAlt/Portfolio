@@ -225,14 +225,15 @@ body {
 
 /* projects */
 #projects {
-    /* border: 2px dashed lightskyblue; */
-    /* border: 2px dashed lightskyblue; */
+    /* padding-bottom: 3em;
+    margin-bottom: 3em; */
+    /* border: 2px dashed red; */
 }
 
 #skills-wrapper {
-    margin: 18em 20em;
-    /* border: 3px dotted blueviolet; */
-    /* border: 3px dotted blueviolet; */
+    /* margin: 18em 20em; */
+    padding: 18em 20em;
+    /* border: 2px dotted var(--tomato); */
 }
 
 #skills {
@@ -242,13 +243,15 @@ body {
     font-size: 3.5em;
     text-align: justify;
     margin-bottom: unset;
+    /* border: 2px dotted var(--tiffany); */
 }
 
 #projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px dashed lime;
+    padding-bottom: 8em;
+    /* border: 1px dashed var(--tiffany); */
 }
 
 .project-container-wrapper {
@@ -342,26 +345,37 @@ body {
 
 /* about */
 #about {
-    margin-top: 10em;
-    border: 3px solid slateblue;
+    padding-bottom: 10em;
+    /* border: 3px dotted rgb(90, 205, 115); */
 }
 
 .about-text-wrapper {
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid rgba(255, 251, 0, 0.685); */
 }
 
-.about-text {
+#about-text-top {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     color: var(--sea-green);
     text-align: justify;
     margin: 1em auto;
-    padding: 0 5em;
+    padding: 0 5.5em;
     font-weight: bold;
-    font-size: 3.25em;
-    border: 1px solid lime;
-
+    font-size: 3em;
+    /* border: 1px solid lime; */
 }
+
+#about-text-bottom {
+    font-family: "CONSOLA", "JetBrains Mono", monospace;
+    color: var(--sea-green);
+    text-align: justify;
+    margin: 1em auto;
+    padding: 0 5.5em;
+    font-weight: bold;
+    font-size: 3em;
+    /* border: 1px solid lime; */
+}
+
 
 #exempli-gratia {
     position: absolute;
@@ -376,12 +390,11 @@ body {
 #about-imgs-div {
     display: flex;
     justify-content: center;
-    border: 2px solid greenyellow;
+    padding: 1em;
+    /* border: 2px solid greenyellow; */
 }
 
 .about-img {
-    max-width: 40vw;
+    width: 40vw;
     object-fit: cover;
-    
-    
 }
