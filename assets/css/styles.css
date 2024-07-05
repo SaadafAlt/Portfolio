@@ -353,25 +353,10 @@ body {
 /* about */
 #about {
     padding-bottom: 10em;
-    /* border: 3px dotted rgb(90, 205, 115); */
+    border: 3px dotted rgb(90, 205, 115);
 }
 
-.about-text-wrapper {
-    display: flex;
-    /* border: 2px solid rgba(255, 251, 0, 0.685); */
-}
-
-#about-text-top {
-    font-family: "CONSOLA", "JetBrains Mono", monospace;
-    color: var(--sea-green);
-    text-align: justify;
-    margin: 1em auto;
-    padding: 0 5.5em;
-    font-weight: bold;
-    font-size: 3em;
-    /* border: 1px solid lime; */
-}
-
+#about-text-top,
 #about-text-bottom {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     color: var(--sea-green);
@@ -380,6 +365,10 @@ body {
     padding: 0 5.5em;
     font-weight: bold;
     font-size: 3em;
+    display: block;
+    width: fit-content; 
+    /* Adjust width to fit content for horizontal centering */
+    border: 3px dotted rgb(90, 205, 115);
 }
 
 #about-imgs-div {
@@ -407,3 +396,5 @@ body {
     width: 40vw;
     object-fit: cover;
 }
+
+/* contact */
