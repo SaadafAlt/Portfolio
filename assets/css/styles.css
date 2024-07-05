@@ -353,7 +353,7 @@ body {
 /* about */
 #about {
     padding-bottom: 10em;
-    border: 3px dotted rgb(90, 205, 115);
+    /* border: 3px dotted rgb(90, 205, 115); */
 }
 
 #about-text-top,
@@ -368,7 +368,7 @@ body {
     display: block;
     width: fit-content; 
     /* Adjust width to fit content for horizontal centering */
-    border: 3px dotted rgb(90, 205, 115);
+    /* border: 3px dotted rgb(90, 205, 115); */
 }
 
 #about-imgs-div {
