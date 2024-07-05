@@ -36,6 +36,13 @@
     font-display: swap;
 }
 
+/* Define Droid Sans font */
+@font-face {
+    font-family: 'Droid Sans';
+    src: url(/assets/fonts/droid-sans-regular.ttf) format('truetype');
+    font-display: swap;
+}
+
 *,
 ::before,
 ::after {
@@ -373,25 +380,27 @@ body {
     padding: 0 5.5em;
     font-weight: bold;
     font-size: 3em;
-    /* border: 1px solid lime; */
-}
-
-
-#exempli-gratia {
-    position: absolute;
-    /* transform: rotate(270deg); */
-    color: var(--slate-grey);
-    border: 2px solid var(--container-border-2);
-    font-size: 1.25em;
-    top: 170em;
-    /* font-style: italic; */
 }
 
 #about-imgs-div {
     display: flex;
     justify-content: center;
+    position: relative;
     padding: 1em;
-    /* border: 2px solid greenyellow; */
+}
+
+#exempli-gratia {
+    font-family: 'Droid Sans', 'JetBrains Mono', "CONSOLA", monospace;
+    font-size: 1.45em;
+    color: var(--slate-grey);
+    position: absolute;
+    /* Position absolutely w/in the relative parent */
+    top: 170em;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Offset by 50% of its own dimensions */
+    padding: 0.5em;
 }
 
 .about-img {
