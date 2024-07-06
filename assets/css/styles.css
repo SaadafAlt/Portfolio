@@ -395,31 +395,36 @@ body {
 }
 
 /* contact */
-
-
-#copy-email-wrapper {
-    font-family: "Roboto Flex", "JetBrains Mono", monospace;
+#copy-email-btn {
+    font-family: "JetBrains Mono", monospace;
     font-size: 2em;
     font-style: normal;
     display: inline-flex;
     align-items: center;
     margin: 4.5em 0 0 165px;
-    border: 2px solid var(--slate-grey);
+    padding: 0.15em;
+    background: none;
+    text-decoration: none;
+    border: none;
+    /* border: 2px solid var(--slate-grey); */
+    
 }
 
-#copy-email-wrapper:hover {
-    border: 2px solid var(--glass-green-2);
+#copy-email-btn:hover {
+    border: 2px solid var(--container-color-2);
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .bxs-copy-alt {
     color: var(--sea-green);
-    border: 2px dotted orangered;
+    /* border: 2px dotted orangered; */
     margin-right: 0.5em;
 }
 
 #my-email {
     color: var(--sea-green);
-    border: 2px dotted orangered;
+    /* border: 2px dotted orangered; */
     margin-bottom: unset;
 }
