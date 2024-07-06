@@ -331,10 +331,6 @@ body {
     margin-top: 2em;
 }
 
-.view-project-wrapper * {
-    /* border: 1px solid red; */
-}
-
 .view-project {
     margin-bottom: unset;
 }
@@ -360,12 +356,9 @@ body {
     /* border: 3px dotted rgb(90, 205, 115); */
 }
 
-.about-text-wrapper {
-    display: flex;
-    /* border: 2px solid rgba(255, 251, 0, 0.685); */
-}
-
-#about-text-top {
+#about-text-top,
+#about-text-bottom,
+#contact-text {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     color: var(--sea-green);
     text-align: justify;
@@ -373,17 +366,10 @@ body {
     padding: 0 5.5em;
     font-weight: bold;
     font-size: 3em;
-    /* border: 1px solid lime; */
-}
-
-#about-text-bottom {
-    font-family: "CONSOLA", "JetBrains Mono", monospace;
-    color: var(--sea-green);
-    text-align: justify;
-    margin: 1em auto;
-    padding: 0 5.5em;
-    font-weight: bold;
-    font-size: 3em;
+    display: block;
+    width: fit-content; 
+    /* Adjust width to fit content for horizontal centering */
+    /* border: 3px dotted rgb(90, 205, 115); */
 }
 
 #about-imgs-div {
@@ -410,4 +396,39 @@ body {
 .about-img {
     width: 40vw;
     object-fit: cover;
+}
+
+/* contact */
+#copy-email-btn {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 2em;
+    font-style: normal;
+    display: inline-flex;
+    align-items: center;
+    margin: 4.5em 0 0 165px;
+    padding: 0.15em;
+    background: none;
+    text-decoration: none;
+    border: none;
+    /* border: 2px solid var(--slate-grey); */
+    
+}
+
+#copy-email-btn:hover {
+    border: 2px solid var(--container-color-2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bxs-copy-alt {
+    color: var(--sea-green);
+    /* border: 2px dotted orangered; */
+    margin-right: 0.5em;
+}
+
+#my-email {
+    color: var(--sea-green);
+    /* border: 2px dotted orangered; */
+    margin-bottom: unset;
 }
