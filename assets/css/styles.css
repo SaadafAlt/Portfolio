@@ -481,7 +481,7 @@ body {
 
 #email::placeholder,
 #message::placeholder {
-    padding-left: 5px;
+    padding-left: 10px;
     color: rgba(214, 226, 223, 0.22);
     /* border: 1px dashed yellow; */
 }
@@ -521,13 +521,17 @@ body {
 
 */
 
+#submit,
+.bx-mail-send {
+    color: rgba(214, 226, 223, 0.651);
+}
+
 
 #submit {
-    font-family: "Roboto Flex", "JetBrains Mono", monospace;
-    font-size: 2em;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.75em;
     font-weight: bold;
     text-transform: uppercase;
-    color: #d3d8d8;
     padding-left: 10px;
     background: none;
     border: none;
@@ -536,6 +540,5 @@ body {
 
 .bx-mail-send {
     font-size: 2.25em;
-    color: #d3d8d8;
     padding-right: 10px;
 }
