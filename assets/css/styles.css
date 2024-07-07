@@ -420,23 +420,29 @@ body {
     transition: 0.5s;
 }
 
-/* .bxs-copy-alt:hover,
-#my-email:hover {
-    color: var(--container-color-2);
-    transition: 0.5s;
-} */
+#copy-email-btn:focus {
+    outline-style: solid;
+    outline-color: rgba(0, 190, 0, 0);
+    /* use JS setTimeout to reset the properties */
+    outline-offset: 10px;
+}
+
 
 .bxs-copy-alt {
     color: var(--sea-green);
-    /* border: 2px dotted orangered; */
     margin-right: 0.5em;
 }
 
 #my-email {
     color: var(--sea-green);
-    /* border: 2px dotted orangered; */
     margin-bottom: unset;
 }
+
+/* .bxs-copy-alt:hover,
+#my-email:hover {
+    color: var(--container-color-2);
+    transition: 0.5s;
+} */
 
 #contact-form {
     margin: 4em 165px 0;
@@ -460,13 +466,15 @@ body {
 
 #email,
 #message {
+    color: var(--slate-grey);
     font-family: monospace;
     font-size: 2em;
-    border-radius: 5px;
+    padding-left: 10px;
     width: 50%;
     max-width: 700px;
     height: 2em;
     border: none;
+    border-radius: 5px;
     background: linear-gradient(rgba(55, 78, 72, 0.38),
             rgba(127, 180, 166, 0.29));
 }
@@ -477,9 +485,12 @@ body {
 
 #email::placeholder,
 #message::placeholder {
-    padding-left: 10px;
     color: rgba(214, 226, 223, 0.22);
-    /* border: 1px dashed yellow; */
+}
+
+#email:focus,
+#message:focus {
+    outline-color: var(--clay-green);
 }
 
 #submit-btn {
@@ -514,14 +525,12 @@ body {
 #submit-btn:not(:hover) {
     transition: 0.5s;
 }
-
 */
 
 #submit,
 .bx-mail-send {
     color: rgba(214, 226, 223, 0.651);
 }
-
 
 #submit {
     font-family: "JetBrains Mono", monospace;
@@ -531,14 +540,9 @@ body {
     padding-left: 10px;
     background: none;
     border: none;
-
 }
 
 .bx-mail-send {
     font-size: 2.25em;
     padding-right: 10px;
 }
-
-/* TODO:
-    - style textarea of input boxes when user types in their
-    email address or types into the message box. */
