@@ -167,13 +167,18 @@
             <i class='bx bxs-copy-alt'></i>
             <p id="my-email">saadafmohsin@gmail.com</p>
         </button>
-        <section id="contact-form">
-            <!-- subheading: Email Addres -->
-            <!-- textbox - placeholder: "Email Address" -->
-            <!-- subheading: Message -->
-            <!-- textbox - placeholder: "Send me a message" -->
-            <!-- Submit button "SEND" -->
-        </section>
+        <!-- BP Reminder: "The `for` attr. in the `label` tag should match the `id` of the associated input element." -->
+        <form id="contact-form" action="/send-email" method="POST">
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Email Address" required><br><br>
+            <label for="message" id="message-label">Message</label><br>
+            <textarea id="message" name="message" rows="5" cols="100" placeholder="Send me a message"
+                required></textarea><br><br>
+            <button id="submit-btn">
+                <input type="submit" id="submit" value="Send">
+                <i class='bx bx-mail-send'></i>
+            </button>
+        </form>
     </section>
     <sript src="/frameworks/bootstrap/js/bootstrap.min.js"></sript>
     <script src="/assets/scripts/script.js"></script>

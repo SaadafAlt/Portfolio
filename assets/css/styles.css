@@ -363,7 +363,7 @@ body {
     font-weight: bold;
     font-size: 3em;
     display: block;
-    width: fit-content; 
+    width: fit-content;
     /* Adjust width to fit content for horizontal centering */
     /* border: 3px dotted rgb(90, 205, 115); */
 }
@@ -381,7 +381,6 @@ body {
     color: var(--slate-grey);
     position: absolute;
     /* Position absolutely w/in the relative parent */
-    top: 170em;
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -392,6 +391,7 @@ body {
 .about-img {
     width: 40vw;
     object-fit: cover;
+    /* border: 2px solid var(--slate-grey); */
 }
 
 /* contact */
@@ -405,9 +405,8 @@ body {
     padding: 0.15em;
     background: none;
     text-decoration: none;
-    border: none;
-    /* border: 2px solid var(--slate-grey); */
-    
+    border: 2px solid rgba(55, 78, 72, 0);
+    border-radius: 5px;
 }
 
 #copy-email-btn:hover {
@@ -416,6 +415,16 @@ body {
     cursor: pointer;
     transition: 0.5s;
 }
+
+#copy-email-btn:not(:hover) {
+    transition: 0.5s;
+}
+
+/* .bxs-copy-alt:hover,
+#my-email:hover {
+    color: var(--container-color-2);
+    transition: 0.5s;
+} */
 
 .bxs-copy-alt {
     color: var(--sea-green);
@@ -427,4 +436,102 @@ body {
     color: var(--sea-green);
     /* border: 2px dotted orangered; */
     margin-bottom: unset;
+}
+
+#contact-form {
+    margin: 4em 165px 0;
+    padding-bottom: 10em;
+    /* margin-top: 4em; */
+    /* border: 2px dashed yellowgreen; */
+}
+
+#email-label,
+#message-label {
+    color: var(--sea-green);
+    font-family: "CONSOLA", "JetBrains Mono", monospace;
+    font-size: 2.25em;
+    font-weight: bold;
+    /* border: 1px solid fuchsia; */
+}
+
+#message-label {
+    margin-top: 0.85em;
+}
+
+#email,
+#message {
+    font-family: monospace;
+    font-size: 2em;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 700px;
+    height: 2em;
+    border: none;
+    background: linear-gradient(rgba(55, 78, 72, 0.38),
+            rgba(127, 180, 166, 0.29));
+}
+
+#message {
+    height: 7em;
+}
+
+#email::placeholder,
+#message::placeholder {
+    padding-left: 5px;
+    color: rgba(214, 226, 223, 0.22);
+    /* border: 1px dashed yellow; */
+}
+
+#submit-btn {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 50%;
+    height: 40px;
+    max-width: 700px;
+    background: linear-gradient(rgba(127, 180, 166, 0.473) 0%,
+            rgba(91, 129, 119, 0.11) 50%,
+            rgba(127, 180, 166, 0.27) 100%);
+    border: none;
+}
+
+#submit-btn:hover {
+    background: linear-gradient(rgba(91, 129, 119, 0.568) 0%,
+            rgba(127, 180, 166, 0.342) 50%,
+            rgba(127, 180, 166, 1) 100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* use JS to make this happen.
+    - if hover over #submit-btn, do something to all elem inside
+#submit-btn > *:hover {
+    color: var(--tiffany);
+}
+
+#submit-btn:not(:hover) {
+    transition: 0.5s;
+}
+
+*/
+
+
+#submit {
+    font-family: "Roboto Flex", "JetBrains Mono", monospace;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d3d8d8;
+    padding-left: 10px;
+    background: none;
+    border: none;
+
+}
+
+.bx-mail-send {
+    font-size: 2.25em;
+    color: #d3d8d8;
+    padding-right: 10px;
 }
