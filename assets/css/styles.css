@@ -538,3 +538,7 @@ body {
     font-size: 2.25em;
     padding-right: 10px;
 }
+
+/* TODO:
+    - style textarea of input boxes when user types in their
+    email address or types into the message box. */
