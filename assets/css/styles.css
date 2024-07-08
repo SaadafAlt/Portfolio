@@ -455,6 +455,7 @@ body {
     /* border: 2px dashed yellowgreen; */
 }
 
+#name-label,
 #email-label,
 #message-label {
     color: var(--sea-green);
@@ -464,10 +465,15 @@ body {
     /* border: 1px solid fuchsia; */
 }
 
-#message-label {
+#name-label {
     margin-top: 0.85em;
 }
 
+#email-label {
+    margin-top: 0.25em;
+}
+
+#name,
 #email,
 #message {
     color: var(--slate-grey);
@@ -487,11 +493,13 @@ body {
     height: 7em;
 }
 
+#name::placeholder,
 #email::placeholder,
 #message::placeholder {
     color: rgba(214, 226, 223, 0.22);
 }
 
+#name:focus,
 #email:focus,
 #message:focus {
     outline-color: var(--clay-green);
