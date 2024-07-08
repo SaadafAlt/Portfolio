@@ -406,15 +406,15 @@ body {
     display: inline-flex;
     align-items: center;
     margin: 4.5em 0 0 165px;
-    padding: 0.15em;
+    padding: 0.25em;
     background: none;
     text-decoration: none;
-    border: 2px solid rgba(55, 78, 72, 0);
+    border: 3px solid rgba(55, 78, 72, 0);
     border-radius: 5px;
 }
 
 #copy-email-btn:hover {
-    border: 2px solid var(--container-color-2);
+    border: 3px solid var(--container-color-2);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
@@ -457,10 +457,11 @@ body {
 
 #name-label,
 #email-label,
+#subject-label,
 #message-label {
     color: var(--sea-green);
     font-family: "CONSOLA", "JetBrains Mono", monospace;
-    font-size: 2.25em;
+    font-size: 2.15em;
     font-weight: bold;
     /* border: 1px solid fuchsia; */
 }
@@ -469,12 +470,14 @@ body {
     margin-top: 0.85em;
 }
 
-#email-label {
-    margin-top: 0.25em;
+#email-label,
+#subject-label {
+    margin-top: 0.5em;
 }
 
 #name,
 #email,
+#subject,
 #message {
     color: var(--slate-grey);
     font-family: monospace;
@@ -495,12 +498,14 @@ body {
 
 #name::placeholder,
 #email::placeholder,
+#subject::placeholder,
 #message::placeholder {
     color: rgba(214, 226, 223, 0.22);
 }
 
 #name:focus,
 #email:focus,
+#subject:focus,
 #message:focus {
     outline-color: var(--clay-green);
 }
