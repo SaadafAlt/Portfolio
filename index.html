@@ -168,10 +168,10 @@
             <p id="my-email">saadafmohsin@gmail.com</p>
         </button>
         <!-- BP Reminder: "The `for` attr. in the `label` tag should match the `id` of the associated input element." -->
-        <form id="contact-form" action="/send-email" method="POST">
+        <form id="contact-form" action="#" method="POST">
             <label for="name" id="name-label">Name:</label><br>
             <input type="text" id="name" placeholder="Name" required><br>
-            
+
             <label for="email" id="email-label">Email:</label><br>
             <input type="email" id="email" name="email" placeholder="Email Address" required><br>
 
@@ -188,6 +188,7 @@
         </form>
     </section>
     <sript src="/frameworks/bootstrap/js/bootstrap.min.js"></sript>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/assets/scripts/script.js"></script>
 </body>
 

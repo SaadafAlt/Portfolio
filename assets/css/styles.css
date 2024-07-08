@@ -204,7 +204,7 @@ body {
 }
 
 .social-icon:hover {
-    color: var(--slate-grey);
+    color: var(--tiffany);
     transition: 0.5s;
 }
 
