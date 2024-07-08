@@ -29,10 +29,10 @@ function sendEmail() {
     // Port: 2525
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "SaadafMohsin@gmail.com",
+        Username: "saadafmohsin@gmail.com",
         Password: "094BC959EA0481CC10A409A9C3C99D7D2277",
-        To: 'them@website.com',
-        From: "you@isp.com",
+        To: 'saadafmohsin@gmail.com',
+        From: "saadafmohsin@gmail.com",
         Subject: "This is the subject",
         Body: "And this is the body"
     }).then(
@@ -40,3 +40,9 @@ function sendEmail() {
     );
 
 }
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    sendEmail();
+})
