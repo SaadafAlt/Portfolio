@@ -170,17 +170,17 @@
         <!-- BP Reminder: "The `for` attr. in the `label` tag should match the `id` of the associated input element." -->
         <form action="#" method="POST">
             <label for="name" id="name-label">Name:</label><br>
-            <input type="text" class="item" id="name" placeholder="Name" ><br>
+            <input type="text" class="item" id="name" placeholder="Name" required><br>
 
             <label for="email" id="email-label">Email:</label><br>
-            <input type="email" class="item" id="email" name="email" placeholder="Email Address" ><br>
+            <input type="email" class="item" id="email" name="email" placeholder="Email Address" required><br>
 
             <label for="subject" id="subject-label">Subject:</label><br>
-            <input type="text" class="item" id="subject" name="subject" placeholder="Subject" ><br><br>
+            <input type="text" class="item" id="subject" name="subject" placeholder="Subject" required><br><br>
 
             <label for="message" id="message-label">Message:</label><br>
             <textarea class="item" id="message" name="message" rows="5" cols="100" placeholder="Send me a message"
-                ></textarea><br><br>
+                required></textarea><br><br>
             <button id="submit-btn">
                 <input type="submit" id="submit" value="Send">
                 <i class='bx bx-mail-send'></i>
