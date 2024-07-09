@@ -36,9 +36,7 @@ function sendEmail() {
     `;
 
     Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "saadafmohsin@gmail.com",
-        Password: "094BC959EA0481CC10A409A9C3C99D7D2277",
+        SecureToken: "857f1dc5-b045-4f53-9108-605fdf60f734",
         To: 'saadafmohsin@gmail.com',
         From: "saadafmohsin@gmail.com",
         Subject: subject.value,
@@ -55,8 +53,30 @@ function sendEmail() {
             }
         }
     );
-
 }
+
+/*
+    function checkInputs() {
+        const items = document.querySelectorAll(".item");
+
+        for (const item of items) {
+            if (item.value == "") {
+                item.classList.add("error");
+                item.parentElement.classList.add("error");
+            }
+        }
+
+        item.addEventListener("keyup", () => {
+            if (item.value != "") {
+                item.classList.remove("error");
+                item.parentElement.classList.remove("error");
+            } else {
+                item.classList.add("error");
+                item.parentElement.classList.add("error");
+            }
+        });
+    }
+*/
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
