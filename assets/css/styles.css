@@ -1,21 +1,23 @@
 :root {
+    /* feature colors */
     --container-color-1: rgba(55, 78, 72, 0.23);
     --container-color-2: rgba(127, 180, 166, 0.43);
     --container-border-1: #006A4E;
     --container-border-2: #00D099;
     --container-project-gradient-1: rgba(127, 180, 166, 0.29);
     --container-project-gradient-2: rgba(55, 78, 72, 0.12);
-    --glass-green-2: #052E23;
-    --glass-green-3: #6E9A8E;
+    --dark-tempered-glass: #052E23;
     --glass-green-border: #042F24;
-    --tiffany: #95D1C1;
     --blood: #6A0000;
     --tomato: #9D0000;
     /* font colors */
     --sea-green: #2EC57C;
+    --tiffany: #95D1C1;
     --slate-grey: #C7C9C9;
+    --transparent-sage: rgba(214, 226, 223, 0.651);
     /* not used yet */
     --seafoam-green: #93E9BE;
+    --sage: #6E9A8E;
     --clay-green: #739A78;
     --stone-green: #2E4339;
     --blackish-green: #121614;
@@ -72,7 +74,8 @@ body {
 
 /* navbar */
 #navbar {
-    margin: 2rem 5rem 0em;
+    margin: 0 5rem 0em;
+    padding-top: 2rem;
     font-family: "JetBrains Mono", monospace;
 }
 
@@ -85,11 +88,11 @@ body {
 #nav-ul {
     display: inline-flex;
     margin-bottom: unset;
-    align-self: center;
-    background-color: var(--glass-green-2);
-    padding: 0 2rem;
+    background-color: var(--dark-tempered-glass);
+    padding: 0.15em 2rem;
     border-radius: 3px;
     column-gap: 1.5rem;
+    align-items: center;
 }
 
 .nav-li {
@@ -129,11 +132,9 @@ body {
 /* home */
 #home {
     padding-top: 2em;
-    /* border: 2px dashed yellow; */
 }
 
 #container-home {
-    /* Ensures the pseudo-element is positioned relative to the container */
     position: relative;
     height: 65vh;
     margin: 8em 16em;
@@ -223,7 +224,6 @@ body {
     width: 68%;
     padding: 0 0em 0 2em;
     /* border: 2px dashed var(--tiffany-glass); */
-    /* border: 2px dashed var(--tiffany-glass); */
 }
 
 #intro-span {
@@ -232,14 +232,13 @@ body {
 
 /* projects */
 #projects {
-    /* padding-bottom: 3em;
-    margin-bottom: 3em; */
+    margin-top: 4em;
     /* border: 2px dashed red; */
 }
 
 #skills-wrapper {
     /* margin: 18em 20em; */
-    padding: 18em 20em;
+    padding: 14em 20em;
     /* border: 2px dotted var(--tomato); */
 }
 
@@ -257,6 +256,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 4em;
     padding-bottom: 8em;
     /* border: 1px dashed var(--tiffany); */
 }
@@ -299,10 +299,6 @@ body {
     mask-composite: subtract;
     /* Ensures the pseudo-element doesn't interfere with container content */
     pointer-events: none;
-}
-
-.stack-wrapper {
-    /* border: 1px dashed slateblue; */
 }
 
 .stack-icon {
@@ -348,13 +344,20 @@ body {
 
 .project-link:hover {
     color: var(--tiffany);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.project-link:not(:hover) {
+    transition: 0.5s;
 }
 
 /* about */
 #about {
     padding-bottom: 10em;
-    /* border: 3px dotted rgb(90, 205, 115); */
+    /* border: 3px dashed rgb(90, 205, 115); */
 }
+
 
 #about-text-top,
 #about-text-bottom,
@@ -370,6 +373,11 @@ body {
     width: fit-content;
     /* Adjust width to fit content for horizontal centering */
     /* border: 3px dotted rgb(90, 205, 115); */
+}
+
+#about-text-top {
+    margin-top: 0 !important;
+    padding-top: 1.5em;
 }
 
 #about-imgs-div {
@@ -388,25 +396,26 @@ body {
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Offset by 50% of its own dimensions */
     padding: 0.5em;
 }
 
 .about-img {
     width: 40vw;
     object-fit: cover;
-    /* border: 2px solid var(--slate-grey); */
 }
 
 /* contact */
+#contact-text {
+    margin-top: unset;
+    padding-top: 1.25em;
+}
+
 #copy-email-btn {
     font-family: "JetBrains Mono", monospace;
-    font-size: 2em;
+    font-size: 2.25em;
     font-style: normal;
     display: inline-flex;
     align-items: center;
-    margin: 4.5em 0 0 165px;
-    padding: 0.25em;
     background: none;
     text-decoration: none;
     border: 3px solid rgba(55, 78, 72, 0);
@@ -431,7 +440,6 @@ body {
     outline-offset: 10px;
 }
 
-
 .bxs-copy-alt {
     color: var(--sea-green);
     margin-right: 0.5em;
@@ -449,10 +457,24 @@ body {
 } */
 
 form {
-    margin: 4em 165px 0;
+    margin: 1em 165px 0;
     padding-bottom: 10em;
     /* margin-top: 4em; */
     /* border: 2px dashed yellowgreen; */
+}
+
+#copy-email-wrapper {
+    margin: 0 165px;
+}
+
+#click-to-copy {
+    color: var(--transparent-sage);
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: unset;
+    padding-left: 0.25em;
 }
 
 #name-label,
@@ -471,9 +493,10 @@ form {
 }
 
 #email-label,
-#subject-label {
+#subject-label,
+#message-label {
     margin-top: 0.5em;
-}
+} 
 
 #name,
 #email,
@@ -546,7 +569,7 @@ form {
 
 #submit,
 .bx-mail-send {
-    color: rgba(214, 226, 223, 0.651);
+    color: var(--transparent-sage);
 }
 
 #submit {
@@ -562,4 +585,29 @@ form {
 .bx-mail-send {
     font-size: 2.25em;
     padding-right: 10px;
+}
+
+/* footer */
+footer {
+    margin-top: 2em;
+    padding-bottom: 4em;
+}
+
+.footer-icon-wrapper {
+    text-align: center;
+}
+
+.bx-chevron-up-circle {
+    font-size: 5em;
+    color: rgba(214, 226, 223, 0.22);
+}
+
+.bx-chevron-up-circle:hover {
+    color: var(--transparent-sage);
+    transition: 0.5s;
+}
+
+.bx-chevron-up-circle:not(:hover) {
+    transition: 0.5s;
+
 }

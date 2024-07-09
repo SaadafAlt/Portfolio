@@ -19,14 +19,14 @@
 
 </head>
 
-<body>
+<body id="homepage">
     <section id="navbar">
         <nav id="nav">
             <ul id="nav-ul">
-                <li class="nav-li"><a href="#home">home</a></li>
+                <li class="nav-li"><a href="#homepage">home</a></li>
                 <li class="nav-li"><a href="#projects">projects</a></li>
                 <li class="nav-li"><a href="#about">about</a></li>
-                <li class="nav-li"><a href="#">email</a></li>
+                <!-- <li class="nav-li"><a href="#">email</a></li> -->
                 <li class="nav-li"><a href="#contact">contact</a></li>
             </ul>
             <p id="location">TOR, CAN • 43.6426° N, 79.3871° W</p>
@@ -159,15 +159,18 @@
             the realm of devices. One of my great intentions is to blur the lines between my favourite
             disciplinaries, and web development is one of them.</p>
     </section>
+
     <section id="contact">
         <p id="contact-text">Currently based in the Greater Toronto Area. I’m eager to collaborate at a company pushing
             with a team dedicated to making a positive impact. If your organization aligns with these values, I would
             love to connect. Please feel free to contact me below.</p>
-        <button id="copy-email-btn" onclick="copyContent()">
-            <i class='bx bxs-copy-alt'></i>
-            <p id="my-email">saadafmohsin@gmail.com</p>
+        <div id="copy-email-wrapper">
+            <p id="click-to-copy">Click to copy</p>
+            <button id="copy-email-btn" onclick="copyContent()">
+                <i class='bx bxs-copy-alt'></i>
+                <p id="my-email">saadafmohsin@gmail.com</p>
+        </div>
         </button>
-        <!-- BP Reminder: "The `for` attr. in the `label` tag should match the `id` of the associated input element." -->
         <form action="#" method="POST">
             <label for="name" id="name-label">Name:</label><br>
             <input type="text" class="item" id="name" placeholder="Name" required><br>
@@ -187,10 +190,21 @@
             </button>
         </form>
     </section>
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <sript src="/frameworks/bootstrap/js/bootstrap.min.js"></sript>
     <script src="/assets/scripts/script.js"></script>
+
 </body>
+<footer>
+    <div class="footer-icon-wrapper">
+        <a href="#homepage">
+            <i class='bx bx-chevron-up-circle'></i>
+        </a>
+    </div>
+</footer>
 
 </html>
+
+<!-- note: if we put in a little margin-top, on click, a section will start at the padding-top -->
