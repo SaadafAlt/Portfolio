@@ -138,6 +138,7 @@ body {
 
 #navbar-email-btn:hover {
     color: var(--sage);
+    cursor: pointer;
 }
 
 #navbar-email-btn > p {
@@ -193,18 +194,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 10px;
-    /* Match the border-radius of the container */
-    padding: 4px;
-    /* Adjust padding to match the border width */
+    border-radius: 10px;    /* Match the border-radius of the container */
+    padding: 4px;           /* Adjust padding to match the border width */
     background: linear-gradient(to bottom, var(--container-border-1) 0%, var(--container-border-2) 100%);
-    -webkit-mask:
-        /* Ensures the border-radius is applied */
+    -webkit-mask:           /* Ensures the border-radius is applied */
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: subtract;
-    /* Ensures the pseudo-element doesn't interfere with container content */
+    /* Ensure pseudo-element doesn't interfere w/ container content */
     pointer-events: none;
 }
 
@@ -263,7 +261,6 @@ body {
     left: 10em;
     width: 68%;
     padding: 0 0em 0 2em;
-    /* border: 2px dashed var(--tiffany-glass); */
 }
 
 #intro-span {
@@ -277,7 +274,6 @@ body {
 }
 
 #skills-wrapper {
-    /* margin: 18em 20em; */
     padding: 14em 20em;
     /* border: 2px dotted var(--tomato); */
 }
@@ -327,17 +323,13 @@ body {
     right: 0;
     bottom: 0;
     border-radius: 10px;
-    /* Match the border-radius of the container */
     padding: 4px;
-    /* Adjust padding to match the border width */
     background: linear-gradient(to bottom, var(--container-border-1) 0%, var(--container-border-2) 100%);
     -webkit-mask:
-        /* Ensures the border-radius is applied */
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: subtract;
-    /* Ensures the pseudo-element doesn't interfere with container content */
     pointer-events: none;
 }
 
@@ -410,8 +402,7 @@ body {
     font-weight: bold;
     font-size: 3em;
     display: block;
-    width: fit-content;
-    /* Adjust width to fit content for horizontal centering */
+    width: fit-content; /* Adjust width to fit content for horizontal centering */
     /* border: 3px dotted rgb(90, 205, 115); */
 }
 
@@ -431,8 +422,7 @@ body {
     font-family: 'Droid Sans', 'JetBrains Mono', "CONSOLA", monospace;
     font-size: 1.45em;
     color: var(--slate-grey);
-    position: absolute;
-    /* Position absolutely w/in the relative parent */
+    position: absolute;     /* Position absolutely w/in relative parent */
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -477,7 +467,7 @@ body {
 #copy-email-btn:focus {
     outline-style: solid;
     outline-color: rgba(0, 190, 0, 0);
-    /* use JS setTimeout to reset the properties */
+    /* TODO: use JS setTimeout to reset the properties */
     outline-offset: 10px;
 }
 
@@ -491,16 +481,9 @@ body {
     margin-bottom: unset;
 }
 
-/* .bxs-copy-alt:hover,
-#my-email:hover {
-    color: var(--container-color-2);
-    transition: 0.5s;
-} */
-
 form {
     margin: 1em 165px 0;
     padding-bottom: 10em;
-    /* margin-top: 4em; */
     /* border: 2px dashed yellowgreen; */
 }
 
