@@ -20,23 +20,40 @@ const copyContent = async () => {
 }
 
 /**
- * Contact form functionality
+ * Enable clients to send emails
  */
 const form = document.querySelector('form');
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const mess = document.getElementById("message");
 
 function sendEmail() {
+    const bodyMessage = `
+        Full Name: ${fullName.value}<br>
+        Email: ${email.value}<br>
+        Message: ${mess.value}
+    `;
 
-    // Port: 2525
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "saadafmohsin@gmail.com",
         Password: "094BC959EA0481CC10A409A9C3C99D7D2277",
         To: 'saadafmohsin@gmail.com',
         From: "saadafmohsin@gmail.com",
-        Subject: "This is the subject",
-        Body: "And this is the body"
+        Subject: subject.value,
+        Body: bodyMessage
+        // Port: 2525
     }).then(
-        message => alert(message)
+        message => {
+            if (message == "OK") {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Message sent successfully.",
+                    icon: "success"
+                });
+            }
+        }
     );
 
 }
