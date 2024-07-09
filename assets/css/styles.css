@@ -57,6 +57,7 @@ html {
     background-size: 100% 100vh;
     background-repeat: no-repeat;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -74,9 +75,12 @@ body {
 
 /* navbar */
 #navbar {
-    margin: 0 5rem 0em;
-    padding-top: 2rem;
     font-family: "JetBrains Mono", monospace;
+    width: 100%;
+    /* margin: 0 5rem 0em; */
+    padding: 2rem 5rem 0rem;
+    padding-top: 2rem;
+    /* border: 2px dashed yellowgreen; */
 }
 
 #nav {
@@ -93,6 +97,9 @@ body {
     border-radius: 3px;
     column-gap: 1.5rem;
     align-items: center;
+    /* border: 2px solid yellowgreen; */
+    overflow: hidden;
+    z-index: 3;
 }
 
 .nav-li {
@@ -121,12 +128,45 @@ body {
     align-self: center;
 }
 
+#navbar-email-btn {
+    color: var(--slate-grey);
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+#navbar-email-btn:hover {
+    color: var(--sage);
+}
+
+#navbar-email-btn > p {
+    margin-bottom: unset;
+}
+
+#navbar-email-btn-copy-i {
+    color: var(--sage);
+}
+
 #nav-hr {
     border-style: solid;
     margin-top: 1.25rem;
     border-color: var(--blood);
     background-color: var(--blood);
     height: 2.5px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 2em;
+}
+
+.sticky+.content {
+    padding-top: 60px;
 }
 
 /* home */
@@ -412,18 +452,19 @@ body {
 
 #copy-email-btn {
     font-family: "JetBrains Mono", monospace;
-    font-size: 2.25em;
+    font-size: 1.85em;
     font-style: normal;
     display: inline-flex;
     align-items: center;
+    padding: 0 0.2em;
     background: none;
     text-decoration: none;
-    border: 3px solid rgba(55, 78, 72, 0);
+    border: 2px solid rgba(55, 78, 72, 0);
     border-radius: 5px;
 }
 
 #copy-email-btn:hover {
-    border: 3px solid var(--container-color-2);
+    border: 2px solid var(--transparent-sage);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
@@ -496,7 +537,7 @@ form {
 #subject-label,
 #message-label {
     margin-top: 0.5em;
-} 
+}
 
 #name,
 #email,
@@ -589,8 +630,7 @@ form {
 
 /* footer */
 footer {
-    margin-top: 2em;
-    padding-bottom: 4em;
+    padding: 2em 0 4em 0;
 }
 
 .footer-icon-wrapper {
