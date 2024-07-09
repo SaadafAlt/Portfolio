@@ -1,6 +1,6 @@
 # Saadaf's Portfolio
 
-Hello! My name is Saadaf. I hope you're well. Welcome to my portfolio repo.
+Hello! My name is Saadaf. I hope you're well. Welcome to my portfolio.
 <br>
 # Identity
 The website's design is inspired by the _Nothing_ phone's brand identity, Metal Gear Solid user interfaces, 90's electroluminescent gauge clusters, and tempered glass. Refer to the moodboard below. 
@@ -11,7 +11,7 @@ It all really kicked off when I saw the image of the _Nothing_ phone, and how it
 <br>
 
 # Technologies
-This website is currently built with HTML, CSS, JavaScript, Bootstrap and Figma.
+This website is currently built with HTML, CSS, JavaScript, and Figma.
 <br>
 
 # UX/UI Prototype
