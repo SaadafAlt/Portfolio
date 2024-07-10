@@ -175,24 +175,30 @@ body {
     #navbar {
         font-family: "JetBrains Mono", monospace;
         width: 100%;
-        padding: 2rem 1rem 0rem;
-        padding-top: 2rem;
-        /* border: 2px dashed yellowgreen; */
+        padding: 1.5em 1.5em 0em;
     }
-
+    
     #nav {
-        display: block;
-        justify-content: space-between;
-        font-size: 1.3em;
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px dashed yellowgreen; */
     }
     
     #nav-ul {
+        
         column-gap: 1em;
         /* border: 1px dashed orangered; */
         
     }
 
+    #location-name {
+        /* display: none; */
+    }
+
     #location {
+        /* font-size: 1em; */
         margin: 1.25rem 0;
         text-align: center;
         line-height: 1.65em;
@@ -203,6 +209,7 @@ body {
     }
 
     #nav-hr {
+        margin-top: unset;
         height: 2px;
     }
     
