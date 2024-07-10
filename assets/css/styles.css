@@ -80,7 +80,6 @@ body {
     /* margin: 0 5rem 0em; */
     padding: 2rem 5rem 0rem;
     padding-top: 2rem;
-    /* border: 2px dashed yellowgreen; */
 }
 
 #nav {
@@ -141,7 +140,7 @@ body {
     cursor: pointer;
 }
 
-#navbar-email-btn > p {
+#navbar-email-btn>p {
     margin-bottom: unset;
 }
 
@@ -173,20 +172,52 @@ body {
 /* Media Queries */
 /* Mobile Devices – 320px — 480px */
 @media only screen and (max-width: 480px) {
+    #navbar {
+        font-family: "JetBrains Mono", monospace;
+        width: 100%;
+        padding: 2rem 1rem 0rem;
+        padding-top: 2rem;
+        /* border: 2px dashed yellowgreen; */
+    }
+
+    #nav {
+        display: block;
+        justify-content: space-between;
+        font-size: 1.3em;
+    }
+    
+    #nav-ul {
+        column-gap: 1em;
+        /* border: 1px dashed orangered; */
+        
+    }
+
+    #location {
+        margin: 1.25rem 0;
+        text-align: center;
+        line-height: 1.65em;
+    }
+
+    #navbar-email-btn {
+        column-gap: 0.5em;
+    }
+
+    #nav-hr {
+        height: 2px;
+    }
     
 }
 
 /* iPads and Tablets – 481px — 768px */
-@media only screen and (max-width: 768px) {
-    
-}
+@media only screen and (max-width: 768px) {}
 
 /* Laptops and small screen – 769px — 1024px */
 @media only screen and (max-width: 1024px) {
-    
+    /* navbar is good */
+
 }
 
 /* Large screens and Desktops – 1025px — 1200px */
 @media only screen and (max-width: 1200px) {
-    
+    /* navbar is good */
 }
