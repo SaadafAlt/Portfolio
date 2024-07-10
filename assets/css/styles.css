@@ -632,5 +632,26 @@ footer {
 
 .bx-chevron-up-circle:not(:hover) {
     transition: 0.5s;
+}
 
+
+/* Media Queries */
+/* Mobile Devices – 320px — 480px */
+@media only screen and (max-width: 480px) {
+    
+}
+
+/* iPads and Tablets – 481px — 768px */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Laptops and small screen – 769px — 1024px */
+@media only screen and (max-width: 1024px) {
+    
+}
+
+/* Large screens and Desktops – 1025px — 1200px */
+@media only screen and (max-width: 1200px) {
+    
 }
