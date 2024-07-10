@@ -77,7 +77,6 @@ body {
 #navbar {
     font-family: "JetBrains Mono", monospace;
     width: 100%;
-    /* margin: 0 5rem 0em; */
     padding: 2rem 5rem 0rem;
     padding-top: 2rem;
     /* border: 2px dashed yellowgreen; */
@@ -97,7 +96,6 @@ body {
     border-radius: 3px;
     column-gap: 1.5rem;
     align-items: center;
-    /* border: 2px solid yellowgreen; */
     overflow: hidden;
     z-index: 3;
 }
@@ -131,6 +129,7 @@ body {
 #navbar-email-btn {
     color: var(--slate-grey);
     display: inline-flex;
+    column-gap: 0.5em;
     align-items: center;
     background: none;
     border: none;
@@ -169,6 +168,7 @@ body {
 .sticky+.content {
     padding-top: 60px;
 }
+
 
 /* home */
 #home {
@@ -634,24 +634,102 @@ footer {
     transition: 0.5s;
 }
 
-
 /* Media Queries */
-/* Mobile Devices – 320px — 480px */
-@media only screen and (max-width: 480px) {
-    
-}
-
-/* iPads and Tablets – 481px — 768px */
-@media only screen and (max-width: 768px) {
-    
+/* Large screens and Desktops – 1025px — 1200px */
+@media (max-width: 1200px) {
+    /* navbar is good */
 }
 
 /* Laptops and small screen – 769px — 1024px */
-@media only screen and (max-width: 1024px) {
-    
+@media (max-width: 1020px) {
+    #navbar {
+        padding: 1.5em 1.5em 0em;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav-ul {
+        column-gap: 1em;
+    }
+
+    #location-name {
+        /* display: none; */
+    }
+
+    #location {
+        margin: 1.25rem 0;
+        text-align: center;
+        line-height: 1.75em;
+        font-size: 0.9em;
+    }
+
+    #nav-hr {
+        margin-top: unset;
+        height: 2px;
+    }
 }
 
-/* Large screens and Desktops – 1025px — 1200px */
-@media only screen and (max-width: 1200px) {
-    
+/* iPads and Tablets – 481px — 768px */
+@media (max-width: 768px) {
+    #navbar {
+        padding: 1.5em 1.5em 0em;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav-ul {
+        column-gap: 1em;
+    }
+
+    #location-name {
+        /* display: none; */
+    }
+
+    #location {
+        margin: 1.25rem 0;
+        text-align: center;
+        line-height: 1.75em;
+        font-size: 0.9em;
+    }
+
+    #nav-hr {
+        margin-top: unset;
+        height: 2px;
+    }
+}
+
+/* Mobile Devices – 320px — 480px */
+@media (max-width: 480px) {
+    #navbar {
+        padding: 1.5em 1.5em 0em;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-ul {
+        column-gap: 1em;
+    }
+
+    #location-name {
+        /* display: none; */
+    }
+
+    #location {
+        margin: 1.25rem 0;
+        text-align: center;
+        line-height: 1.65em;
+    }
+
+    #nav-hr {
+        margin-top: unset;
+        height: 2px;
+    }
 }
