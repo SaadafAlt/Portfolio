@@ -145,7 +145,7 @@ body {
 #navbar-email-btn:focus {
     outline-style: none;
 
-} 
+}
 
 #navbar-email-btn:active {
     color: var(--container-border-1);
@@ -156,7 +156,7 @@ body {
     outline-color: #006a4e00;
 }
 
-#navbar-email-btn > p {
+#navbar-email-btn>p {
     margin-bottom: unset;
 }
 
@@ -191,9 +191,17 @@ body {
     padding-top: 2em;
 }
 
+/* #container-home {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    height: 613px;
+    margin: 8em 10em;
+    padding: 1em 0.5em 0em 4em;
+} */
+
 #container-home {
     position: relative;
-    height: 65vh;
+    height: 613px;
     margin: 8em 16em;
     padding: 1em 4em;
     border-radius: 10px;
@@ -203,6 +211,14 @@ body {
     z-index: 0;
 }
 
+#container-home-div-1 {
+    border: 2px solid orange;
+}
+
+#container-home-div-2 {
+    border: 2px solid red;
+}
+
 #container-home::before {
     content: "";
     position: absolute;
@@ -210,10 +226,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 10px;    /* Match the border-radius of the container */
-    padding: 4px;           /* Adjust padding to match the border width */
+    border-radius: 10px;
+    /* Match the border-radius of the container */
+    padding: 4px;
+    /* Adjust padding to match the border width */
     background: linear-gradient(to bottom, var(--container-border-1) 0%, var(--container-border-2) 100%);
-    -webkit-mask:           /* Ensures the border-radius is applied */
+    -webkit-mask:
+        /* Ensures the border-radius is applied */
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
@@ -271,12 +290,12 @@ body {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     color: var(--sea-green);
     font-weight: bold;
-    font-size: 4.5em;
-    position: relative;
-    top: -11.5em;
-    left: 10em;
-    width: 68%;
-    padding: 0 0em 0 2em;
+    font-size: 2em;
+    /* position: relative; */
+    /* top: -11.5em;
+    left: 10em; */
+    /* width: 68%; */
+    /* padding: 0 0em 0 2em; */
 }
 
 #intro-span {
@@ -306,14 +325,56 @@ footer {
     transition: 0.5s;
 }
 
+
+
 /* Media Queries */
-/* Large screens and Desktops – 1025px — 1200px */
-@media (max-width: 1200px) {
-    /* navbar is good */
+/* Laptop XL */
+@media (max-width: 1806px) {}
+
+
+/* Laptop L - 1201px — 1440px */
+@media (max-width: 1440px) {
+
+    /* home */
+    #home {
+        padding-top: 2em;
+        border: 2px dashed yellow;
+    }
+
+    #container-home {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        height: 613px;
+        margin: 8em 10em;
+        padding: 1em 0.5em 0em 4em;
+    }
+
+    #container-home-div-1 {
+        height: 594px;
+        padding: 0 6em 0 0;
+        border: 2px dashed orange;
+    }
+
+    #container-home-div-2 {
+        height: 594px;
+        border: 2px dashed red;
+        align-content: center;
+    }
+    
+    #intro {
+        font-size: 4.5em;
+        padding: 1em;
+
+    }
 }
+
+/* Large screens and Desktops – 1025px — 1200px */
+@media (max-width: 1259px) {}
 
 /* Laptops and small screen – 769px — 1024px */
 @media (max-width: 1020px) {
+
+    /* navbar */
     #navbar {
         padding: 1.5em 1.5em 0em;
     }
