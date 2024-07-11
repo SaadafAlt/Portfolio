@@ -81,7 +81,6 @@ body {
     width: 100%;
     padding: 2rem 5rem 0rem;
     padding-top: 2rem;
-    /* border: 2px dashed yellowgreen; */
 }
 
 #nav {
@@ -144,7 +143,6 @@ body {
 
 #navbar-email-btn:focus {
     outline-style: none;
-
 }
 
 #navbar-email-btn:active {
@@ -185,22 +183,14 @@ body {
     padding-top: 60px;
 }
 
-
 /* home */
 #home {
     padding-top: 2em;
 }
 
-/* #container-home {
+#container-home {
     display: inline-grid;
     grid-template-columns: auto auto;
-    height: 613px;
-    margin: 8em 10em;
-    padding: 1em 0.5em 0em 4em;
-} */
-
-#container-home {
-    position: relative;
     height: 613px;
     margin: 8em 16em;
     padding: 1em 4em;
@@ -208,37 +198,39 @@ body {
     background: linear-gradient(200deg,
             var(--container-shade-1) 40%,
             var(--container-shade-2) 100%);
+    position: relative; /* Ensure the container is positioned relative for the pseudo-element */
+    /* overflow: hidden; */
     z-index: 0;
+    border: 4px solid var(--container-border-1);
 }
 
-#container-home-div-1 {
-    border: 2px solid orange;
-}
-
-#container-home-div-2 {
-    border: 2px solid red;
-}
-
-#container-home::before {
+/* #container-home::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 10px;
-    /* Match the border-radius of the container */
-    padding: 4px;
-    /* Adjust padding to match the border width */
+    margin: -1em -4em;
+    border-radius: 10px; Match the border-radius of the container 
     background: linear-gradient(to bottom, var(--container-border-1) 0%, var(--container-border-2) 100%);
     -webkit-mask:
-        /* Ensures the border-radius is applied */
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: subtract;
-    /* Ensure pseudo-element doesn't interfere w/ container content */
-    pointer-events: none;
+    pointer-events: none; Ensure the pseudo-element doesn't interfere with container content 
+    z-index: -1; Ensure the pseudo-element is behind the container content
+} */
+
+#container-home-div-1 {
+    height: 594px;
+    padding: 0 6em 0 0;
+}
+
+#container-home-div-2 {
+    height: 594px;
+    align-content: center;
 }
 
 #header-name {
@@ -290,12 +282,9 @@ body {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     color: var(--sea-green);
     font-weight: bold;
-    font-size: 2em;
-    /* position: relative; */
-    /* top: -11.5em;
-    left: 10em; */
-    /* width: 68%; */
-    /* padding: 0 0em 0 2em; */
+    font-size: 5.5em;
+    text-align: center;
+    margin-bottom: unset;
 }
 
 #intro-span {
@@ -360,11 +349,10 @@ footer {
         border: 2px dashed red;
         align-content: center;
     }
-    
+
     #intro {
         font-size: 4.5em;
         padding: 1em;
-
     }
 }
 
