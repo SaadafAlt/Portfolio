@@ -317,17 +317,11 @@ footer {
 
 
 /* Media Queries */
-/* Laptop XL */
-@media (max-width: 1806px) {}
-
-
-/* Laptop L - 1201px — 1440px */
+/* Laptop L - 1265px — 1440px */
 @media (max-width: 1440px) {
-
     /* home */
     #home {
         padding-top: 2em;
-        border: 2px dashed yellow;
     }
 
     #container-home {
@@ -341,12 +335,12 @@ footer {
     #container-home-div-1 {
         height: 594px;
         padding: 0 6em 0 0;
-        border: 2px dashed orange;
+        /* border: 2px dashed orange; */
     }
 
     #container-home-div-2 {
         height: 594px;
-        border: 2px dashed red;
+        /* border: 2px dashed red; */
         align-content: center;
     }
 
@@ -356,8 +350,36 @@ footer {
     }
 }
 
-/* Large screens and Desktops – 1025px — 1200px */
-@media (max-width: 1259px) {}
+/* Large screens and Desktops – 1025px — 1264px */
+@media (max-width: 1264px) {
+    #home {
+        border: 2px dashed lime;
+    }
+
+    #container-home {
+        padding: 0em 0.5em 0em 4em;
+        align-items: center;
+    }
+
+    #container-home-div-1 {
+        /* border: 2px dashed orange; */
+    }
+
+    #container-home-div-2 {
+        /* align-self: center; */
+        /* border: 2px dashed red; */
+    }
+
+    #intro {    
+        font-size: 3.85em;
+        padding: 0 1em;
+    }
+}
+
+@media (max-width: 1161px) {
+    /* TODO: Fix #intro its just too skinny. reduce font size
+    and gotta fix contents inside #container-home-div-1  */
+}
 
 /* Laptops and small screen – 769px — 1024px */
 @media (max-width: 1020px) {
