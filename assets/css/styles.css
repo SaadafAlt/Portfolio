@@ -342,8 +342,8 @@ footer {
 
   #container-home-div-2 {
     height: 594px;
-    /* border: 2px dashed red; */
     align-content: center;
+    /* border: 2px dashed red; */
   }
 
   #intro {
@@ -376,12 +376,11 @@ footer {
   }
 
   #container-home-div-1 {
-    border: 2px dashed orange;
+    /* border: 2px dashed orange; */
   }
 
   #container-home-div-2 {
-    /* align-self: center; */
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
   }
 
   #intro {
@@ -393,16 +392,18 @@ footer {
         2. Marginally reduce font size of #intro (done) */
 
   #header-name {
-    font-size: 6em;
+    font-size: 4.9em;
     position: relative;
-    top: 0.25em;
+    top: 64px;
   }
 
   #profile {
-    position: relative;
-    left: 5.5em;
-    width: 380px;
-    height: 468px;
+    top: 36px;
+    /* left: 5.5em; */
+    width: 323px;
+    /* auto maintains aspect ratio by adjusting the height 
+    automatically in relation to the width */
+    height: auto;
     z-index: -1;
     object-fit: contain;
   }
@@ -410,13 +411,13 @@ footer {
   #ul-social-icons {
     position: relative;
     width: 260px;
-    top: -6.7em;
-    left: 240px;
+    top: -10px;
+    left: 190px;
     display: flex;
   }
 
   .li-social-icons {
-    font-size: 6.2em;
+    font-size: 5.9em;
   }
 }
 
