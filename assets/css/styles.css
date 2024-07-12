@@ -323,6 +323,7 @@ footer {
     #container-home {
         margin: 8em 10em;
         padding: 1em 0.5em 0em 4em;
+        border: none;
     }
 
     #intro {
