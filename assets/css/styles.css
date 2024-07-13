@@ -296,12 +296,10 @@ body {
 /* projects */
 #projects {
     margin-top: 4em;
-    /* border: 2px dashed red; */
 }
 
 #skills-wrapper {
     padding: 14em 20em;
-    /* border: 2px dotted var(--tomato); */
 }
 
 #skills {
@@ -311,7 +309,6 @@ body {
     font-size: 3.5em;
     text-align: justify;
     margin-bottom: unset;
-    /* border: 2px dotted var(--tiffany); */
 }
 
 #projects-container {
@@ -320,7 +317,6 @@ body {
     justify-content: center;
     margin-top: 4em;
     padding-bottom: 8em;
-    /* border: 1px dashed var(--tiffany); */
 }
 
 .project-container-wrapper {
@@ -414,12 +410,10 @@ body {
 /* about */
 #about {
     padding-bottom: 10em;
-    /* border: 3px dashed rgb(90, 205, 115); */
 }
 
 #about-text-top,
-#about-text-bottom,
-#contact-text {
+#about-text-bottom {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     color: var(--sea-green);
     text-align: justify;
@@ -430,7 +424,6 @@ body {
     display: block;
     width: fit-content;
     /* Adjust width to fit content for horizontal centering */
-    /* border: 3px dotted rgb(90, 205, 115); */
 }
 
 #about-text-top {
@@ -463,19 +456,22 @@ body {
 }
 
 /* contact */
-#contact {
-    border: 3px dashed red;
-}
-
 #contact-text {
-    margin-top: unset;
-    padding-top: 1.25em;
-    border: 2px dotted yellowgreen;
+    font-family: "CONSOLA", "JetBrains Mono", monospace;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--sea-green);
+    text-align: justify;
+    display: block;
+    margin: 0 auto 1.5em auto;
+    padding: 1.25em 5.5em 0 5.5em;
+    /* width: fit-content;
+    Adjust width to fit content for horizontal centering */
+    /* border: 3px dotted rgb(90, 205, 115); */
 }
 
 #copy-email-wrapper {
-    margin: 0 165px;
-    border: 2px dashed darkseagreen;
+    text-align: center;
 }
 
 #click-to-copy {
@@ -524,27 +520,23 @@ body {
     margin-right: 0.5em;
 }
 
-form {
-    margin: 1em 165px 0;
-    padding-bottom: 10em;
-    border: 2px dashed yellowgreen;
-}
-
 #my-email {
     color: var(--sea-green);
     margin-bottom: unset;
-    /* border: 2px dashed fuchsia; */
+}
+
+form {
+    padding: 1em 165px 10em;
 }
 
 #name-label,
 #email-label,
 #subject-label,
 #message-label {
-    color: var(--sea-green);
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     font-size: 2.15em;
     font-weight: bold;
-    border: 1px solid fuchsia;
+    color: var(--sea-green);
 }
 
 #name-label {
@@ -565,7 +557,7 @@ form {
     font-family: monospace;
     font-size: 2em;
     padding-left: 10px;
-    width: 50%;
+    width: 65%;
     max-width: 700px;
     height: 2em;
     border: none;
@@ -598,7 +590,7 @@ form {
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
-    width: 50%;
+    width: 65%;
     height: 40px;
     max-width: 700px;
     background: linear-gradient(rgba(127, 180, 166, 0.473) 0%,
@@ -748,6 +740,14 @@ footer {
     #skills {
         text-align: center;
     }
+
+    #name,
+    #email,
+    #subject,
+    #message,
+    #submit-btn {
+        width: 75%;
+    }
 }
 
 /* Laptops and small screen – 769px — 1024px */
@@ -829,8 +829,32 @@ footer {
         padding-right: 100px;
     }
 
+    #about-text-top {
+        text-align: center;
+    }
+
     .about-img {
         width: 45vw;
+    }
+
+    /* contact */
+    form {
+        font-size: 0.85em;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #contact-text {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #name,
+    #email,
+    #subject,
+    #message,
+    #submit-btn {
+        width: 100%;
     }
 }
 
@@ -894,16 +918,31 @@ footer {
     }
 
     /* about */
+    #exempli-gratia {
+        font-size: 1.3em;
+        font-weight: 400;
+        width: 100%;
+    }
+
     #about-text-top,
-    #about-text-bottom {
-        font-size: 2.5em;
+    #about-text-bottom,
+    #contact-text {
+        font-size: 2em;
         padding-left: 80px;
         padding-right: 80px;
     }
 
-    #exempli-gratia {
-        font-size: 1.3em;
-        font-weight: 400;
+    /* contact */
+    form {
+        font-size: 0.75em;
+        padding: 1em 70px 10em;
+    }
+
+    #name,
+    #email,
+    #subject,
+    #message,
+    #submit-btn {
         width: 100%;
     }
 }
@@ -984,7 +1023,8 @@ a query b/w 320px - 480px but rarely any phones have width
 
     /* about */
     #about-text-top,
-    #about-text-bottom {
+    #about-text-bottom,
+    #contact-text {
         font-size: 2em;
         padding-left: 50px;
         padding-right: 50px;
@@ -994,4 +1034,26 @@ a query b/w 320px - 480px but rarely any phones have width
         font-size: 0.9em;
     }
 
+    /* contact */
+
+    form {
+        font-size: 0.75em;
+        padding: 1em 50px 10em;
+    }
+
+    #name,
+    #email,
+    #subject,
+    #message,
+    #submit-btn {
+        width: 100%;
+    }
+
+    #click-to-copy {
+        font-size: 1em;
+    }
+
+    #copy-email-btn {
+        font-size: 1.85em;
+    }
 }
