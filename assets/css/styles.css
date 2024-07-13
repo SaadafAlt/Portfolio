@@ -23,7 +23,7 @@
     --dark-tempered-glass-alt: #042f24;
     --seaweed: #121614;
     --tomato: #9D0000;
-    
+
 }
 
 /* Define Consolas font */
@@ -155,7 +155,7 @@ body {
     outline-color: #006a4e00;
 }
 
-#navbar-email-btn > p {
+#navbar-email-btn>p {
     margin-bottom: unset;
 }
 
@@ -332,10 +332,9 @@ body {
     color: var(--slate-grey);
     position: relative;
     height: 300px;
-    max-height: 360px;
     width: 375px;
     padding: 2.5em;
-    border-radius: 10px;
+    border-radius: 7px;
     background: linear-gradient(var(--container-project-gradient-1) 50%,
             var(--container-project-gradient-2) 100%);
     z-index: 0;
@@ -348,7 +347,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 4px;
     background: linear-gradient(to bottom, var(--container-border-1) 0%, var(--container-border-2) 100%);
     -webkit-mask:
@@ -379,10 +378,12 @@ body {
 .view-project-wrapper {
     font-size: 1.3em;
     font-weight: 600;
+    color: var(--tiffany);
     display: flex;
     align-content: center;
-    color: var(--tiffany);
-    margin-top: 2em;
+    position: absolute;
+    top: 255px;
+    margin: 0;
 }
 
 .view-project {
@@ -416,7 +417,6 @@ body {
     /* border: 3px dashed rgb(90, 205, 115); */
 }
 
-
 #about-text-top,
 #about-text-bottom,
 #contact-text {
@@ -428,7 +428,8 @@ body {
     font-weight: bold;
     font-size: 3em;
     display: block;
-    width: fit-content; /* Adjust width to fit content for horizontal centering */
+    width: fit-content;
+    /* Adjust width to fit content for horizontal centering */
     /* border: 3px dotted rgb(90, 205, 115); */
 }
 
@@ -448,7 +449,8 @@ body {
     font-family: 'Droid Sans', 'JetBrains Mono', "CONSOLA", monospace;
     font-size: 1.45em;
     color: var(--slate-grey);
-    position: absolute;     /* Position absolutely w/in relative parent */
+    position: absolute;
+    /* Position absolutely w/in relative parent */
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -675,18 +677,17 @@ footer {
         font-size: 4.5em;
         padding: 1em;
     }
-
 }
 
 /* Large screens and Desktops – 1025px — 1264px */
 @media (max-width: 1264px) {
-    
+
     /* home */
     #container-home {
         padding: 0em 0.5em 0em 4em;
         align-items: center;
     }
-    
+
     #intro {
         font-size: 3.85em;
         padding: 0 1em;
@@ -724,6 +725,11 @@ footer {
 
     .li-social-icons {
         font-size: 5.9em;
+    }
+
+    /* projects */
+    #skills {
+        text-align: center;
     }
 }
 
@@ -791,24 +797,18 @@ footer {
     }
 
     /* projects */
-    #projects {
-        border: 2px outset red;
-    }
-
     #skills-wrapper {
         padding: 14em 10em;
-        /* border: 2px outset lime; */
     }
 
     #skills {
         font-size: 3em;
-        /* border: 2px dashed fuchsia; */
-        /* text-align: left; */
     }
 }
 
 /* iPads and Tablets – 481px — 768px */
 @media (max-width: 768px) {
+
     /* home */
     #home {
         padding: 0;
@@ -857,19 +857,12 @@ footer {
     }
 
     /* projects */
-    #projects {
-        border: 2px outset lime;
-    }
-
     #skills-wrapper {
-        padding: 10em 8em;
-        /* border: 2px outset lime; */
+        padding: 12em 8em;
     }
 
     #skills {
         font-size: 2.5em;
-        border: 2px dashed fuchsia;
-        /* text-align: left; */
     }
 
 }
@@ -929,5 +922,23 @@ a query b/w 320px - 480px but rarely any phones have width
         left: 0px;
         justify-content: center;
         padding-left: 0.5em;
+    }
+
+    /* projects */
+    #skills-wrapper {
+        padding: 12em 4em;
+    }
+
+    #skills {
+        font-size: 2em;
+    }
+    
+    .project-container-wrapper {
+        margin: 1em 1.75em;
+    }
+
+    .project-container {
+        width: 325px;
+        padding: 2.5em;
     }
 }
