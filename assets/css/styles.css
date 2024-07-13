@@ -463,9 +463,29 @@ body {
 }
 
 /* contact */
+#contact {
+    border: 3px dashed red;
+}
+
 #contact-text {
     margin-top: unset;
     padding-top: 1.25em;
+    border: 2px dotted yellowgreen;
+}
+
+#copy-email-wrapper {
+    margin: 0 165px;
+    border: 2px dashed darkseagreen;
+}
+
+#click-to-copy {
+    color: var(--transparent-sage);
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: unset;
+    padding-left: 0.25em;
 }
 
 #copy-email-btn {
@@ -504,29 +524,16 @@ body {
     margin-right: 0.5em;
 }
 
-#my-email {
-    color: var(--sea-green);
-    margin-bottom: unset;
-}
-
 form {
     margin: 1em 165px 0;
     padding-bottom: 10em;
-    /* border: 2px dashed yellowgreen; */
+    border: 2px dashed yellowgreen;
 }
 
-#copy-email-wrapper {
-    margin: 0 165px;
-}
-
-#click-to-copy {
-    color: var(--transparent-sage);
-    font-family: "JetBrains Mono", monospace;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-style: italic;
+#my-email {
+    color: var(--sea-green);
     margin-bottom: unset;
-    padding-left: 0.25em;
+    /* border: 2px dashed fuchsia; */
 }
 
 #name-label,
@@ -537,7 +544,7 @@ form {
     font-family: "CONSOLA", "JetBrains Mono", monospace;
     font-size: 2.15em;
     font-weight: bold;
-    /* border: 1px solid fuchsia; */
+    border: 1px solid fuchsia;
 }
 
 #name-label {
