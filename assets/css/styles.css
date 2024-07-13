@@ -451,9 +451,9 @@ body {
     color: var(--slate-grey);
     position: absolute;
     /* Position absolutely w/in relative parent */
-    top: 42%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    left: 50%;
+    top: 42%;
     padding: 0.5em;
 }
 
@@ -677,6 +677,16 @@ footer {
         font-size: 4.5em;
         padding: 1em;
     }
+
+    /* about */
+    #exempli-gratia {
+        font-size: 1.75em;
+        font-weight: bold;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 42%;
+    }
 }
 
 /* Large screens and Desktops – 1025px — 1264px */
@@ -804,6 +814,17 @@ footer {
     #skills {
         font-size: 3em;
     }
+
+    /* about */
+    #about-text-top,
+    #about-text-bottom {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .about-img {
+        width: 45vw;
+    }
 }
 
 /* iPads and Tablets – 481px — 768px */
@@ -865,6 +886,19 @@ footer {
         font-size: 2.5em;
     }
 
+    /* about */
+    #about-text-top,
+    #about-text-bottom {
+        font-size: 2.5em;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    #exempli-gratia {
+        font-size: 1.3em;
+        font-weight: 400;
+        width: 100%;
+    }
 }
 
 /* Mobile Devices – 360px — 480px */
@@ -909,7 +943,6 @@ a query b/w 320px - 480px but rarely any phones have width
     }
 
     #header-name {
-        /* position: relative; */
         font-size: 3.75em;
     }
 
@@ -930,9 +963,9 @@ a query b/w 320px - 480px but rarely any phones have width
     }
 
     #skills {
-        font-size: 2em;
+        font-size: 2.25em;
     }
-    
+
     .project-container-wrapper {
         margin: 1em 1.75em;
     }
@@ -941,4 +974,17 @@ a query b/w 320px - 480px but rarely any phones have width
         width: 325px;
         padding: 2.5em;
     }
+
+    /* about */
+    #about-text-top,
+    #about-text-bottom {
+        font-size: 2em;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #exempli-gratia {
+        font-size: 0.9em;
+    }
+
 }
