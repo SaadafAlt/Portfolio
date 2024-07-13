@@ -675,17 +675,18 @@ footer {
         font-size: 4.5em;
         padding: 1em;
     }
+
 }
 
 /* Large screens and Desktops – 1025px — 1264px */
 @media (max-width: 1264px) {
-
+    
     /* home */
     #container-home {
         padding: 0em 0.5em 0em 4em;
         align-items: center;
     }
-
+    
     #intro {
         font-size: 3.85em;
         padding: 0 1em;
@@ -788,6 +789,22 @@ footer {
     .li-social-icons {
         font-size: 4.9em;
     }
+
+    /* projects */
+    #projects {
+        border: 2px outset red;
+    }
+
+    #skills-wrapper {
+        padding: 14em 10em;
+        /* border: 2px outset lime; */
+    }
+
+    #skills {
+        font-size: 3em;
+        /* border: 2px dashed fuchsia; */
+        /* text-align: left; */
+    }
 }
 
 /* iPads and Tablets – 481px — 768px */
@@ -837,6 +854,22 @@ footer {
 
     #ul-social-icons {
         top: -35px;
+    }
+
+    /* projects */
+    #projects {
+        border: 2px outset lime;
+    }
+
+    #skills-wrapper {
+        padding: 10em 8em;
+        /* border: 2px outset lime; */
+    }
+
+    #skills {
+        font-size: 2.5em;
+        border: 2px dashed fuchsia;
+        /* text-align: left; */
     }
 
 }
