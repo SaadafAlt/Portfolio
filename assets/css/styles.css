@@ -1007,20 +1007,17 @@ a query b/w 320px - 480px but rarely any phones have width
 
     #ul-social-icons {
         position: relative;
-        left: 0px;
         justify-content: center;
-        /* padding-left: 0.5em; */
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     /* projects */
     #skills-wrapper {
         padding: 12em 3em;
-        border: 2px dashed red;
     }
 
     #skills {
-        
-        border: 2px dashed red;
         text-align: center;
         font-size: 2.25em;
     }
