@@ -142,8 +142,7 @@ body {
     cursor: pointer;
 }
 
-#navbar-email-btn:not(:hover),
-#navbar-email-btn:not(:active) {
+#navbar-email-btn:not(:hover) {
     color: var(--slate-grey);
 }
 
