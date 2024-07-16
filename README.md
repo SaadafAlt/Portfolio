@@ -11,7 +11,7 @@ It all really kicked off when I saw the image of the _Nothing_ phone, and how it
 <br>
 
 # Technologies
-This website is currently built with HTML, CSS, JavaScript, and Figma.
+HTML, CSS, JavaScript, and Figma.
 <br>
 
 # UX/UI Prototype
