@@ -610,10 +610,10 @@ form {
 }
 
 #submit-btn:hover {
-    background: linear-gradient(rgba(91, 129, 119, 0.568) 0%,
+    /* background: linear-gradient(rgba(91, 129, 119, 0.568) 0%,
             rgba(127, 180, 166, 0.342) 50%,
             rgba(127, 180, 166, 1) 100%);
-    transition: 0.5s;
+    transition: 0.5s; */
     cursor: pointer;
 }
 
