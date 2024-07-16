@@ -450,7 +450,7 @@ body {
     font-weight: bold;
     color: var(--slate-grey);
     padding: 0.25em;
-    
+
     background: rgba(0, 0, 0, 0.418);
     position: absolute;
     /* Position absolutely w/in relative parent */
@@ -458,6 +458,16 @@ body {
     left: 50%;
     top: 42%;
     z-index: 77;
+}
+
+#eg {
+    font-family: 'CONSOLA', monospace;
+    font-size: 1.45em;
+    font-style: italic;
+    color: var(--sea-green);
+    position: block;
+    margin-bottom: unset;
+    text-align: center;
 }
 
 .about-img {
@@ -1047,8 +1057,23 @@ a query b/w 320px - 480px but rarely any phones have width
         text-align: justify;
     }
 
-    #exempli-gratia {
+    /* #exempli-gratia {
         font-size: 0.9em;
+    } */
+
+    #about-imgs-div {
+        padding-bottom: 5px;
+    }
+
+    #eg {
+        font-family: 'CONSOLA', monospace;
+        font-size: 1em;
+        font-style: italic;
+        color: var(--sea-green);
+        position: block;
+        margin-bottom: unset;
+        text-align: center;
+        padding: 0 1em;
     }
 
     /* contact */
