@@ -20,4 +20,7 @@ See: https://www.figma.com/design/7uR4mGdPgJeKycjrVPPWwp/Saadafs-Portfolio?node-
 # Bugs 
 - As users scroll through each section, highlight the respective `li` in the navbar to indicate to the user that they have navigated to a different section
 - Send button on mobile is inconsistent
+
+# Additions
 - apply "copied" setTimeout effect towards the email address listed in the header, like the one done in contact form
+- Add a section describing technologies used/are familiar with
