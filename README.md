@@ -24,3 +24,4 @@ See: https://www.figma.com/design/7uR4mGdPgJeKycjrVPPWwp/Saadafs-Portfolio?node-
 # Additions
 - apply "copied" setTimeout effect towards the email address listed in the header, like the one done in contact form
 - Add a section describing technologies used/are familiar with
+- For home section, apply smooth slide-in text transition animation to text (and img?)
