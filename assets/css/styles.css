@@ -131,23 +131,23 @@ body {
 #navbar-email-btn {
     color: var(--slate-grey);
     display: inline-flex;
-    /* column-gap: 0.5em; */
     align-items: center;
     background: none;
     border: none;
 }
 
 #navbar-email-btn:hover {
-    color: var(--sage);
+    color: var(--transparent-sage);
     cursor: pointer;
 }
 
-#navbar-email-btn:not(:hover) {
+/* #navbar-email-btn:not(:hover) {
     color: var(--slate-grey);
-}
+    } */
 
 #navbar-email-btn:active {
-    color: var(--container-border-1);
+    color: #bbc9bda2;
+
 }
 
 #navbar-email-btn:focus {
@@ -166,7 +166,7 @@ body {
 }
 
 #navbar-email-btn-copy-i {
-    color: var(--sage);
+    color: #bbc9bda2;
 }
 
 #nav-hr {

@@ -60,6 +60,7 @@ const copyContentNav = async () => {
         navEmailElement.innerText = "Copied!";
         setTimeout(() => {
             navEmailElement.innerText = "saadafmohsin@gmail.com";
+            navEmailElement.blur();
         }, 999);
         console.log("Content copied to clipboard");
     } catch (err) {
