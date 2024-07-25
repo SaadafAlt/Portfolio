@@ -1,21 +1,21 @@
 /**
- * sticky navbar
+ * Sticky navbar
  */
-// When the user scrolls the page, execute runSticky
+// when the user scrolls the page, execute runSticky
 window.onscroll = function () {
   runSticky();
 };
 
 var navbar = document.getElementById("nav-ul");
 
-// Get the offset position of the navbar
+// get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position.
+// add the sticky class to the navbar when you reach its scroll position.
 function runSticky() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
-    // Remove "sticky" when you leave the scroll position
+    // remove "sticky" when you leave the scroll position
   } else {
     navbar.classList.remove("sticky");
   }
@@ -23,7 +23,28 @@ function runSticky() {
 
 /**
  * Write to the system clipboard aka copy to clipboard.
- * For Contact section.
+ * For email text in the navbar.
+ */
+const navEmailElement = document.getElementById("nav-email");
+const navEmailValue = navEmailElement.innerText;
+
+const copyContentNav = async () => {
+    try {
+        await navigator.clipboard.writeText(navEmailValue);
+        navEmailElement.innerText = "Copied!";
+        setTimeout(() => {
+            navEmailElement.innerText = "saadafmohsin@gmail.com";
+            navEmailElement.blur();
+        }, 999);
+        console.log("Content copied to clipboard");
+    } catch (err) {
+        console.error("Failed to copy: ", err);
+    }
+}
+
+/**
+ * Write to the system clipboard aka copy to clipboard.
+ * For email text in the contact section.
  */
 const emailElement = document.getElementById("my-email");
 const emailValue = emailElement.innerText;
@@ -43,30 +64,33 @@ const copyContent = async () => {
   }
 };
 
+
 /**
- * Write to the system clipboard aka copy to clipboard.
- * For email in navbar.
+ * Update the active state of nav elements based on the current scroll position
  */
-const navEmailElement = document.getElementById("nav-email");
-const navEmailValue = navEmailElement.innerText;
+const navSections = document.querySelectorAll('.nav-section');
+const navLinks = document.querySelectorAll('.nav-link');
 
-// function copyContentNav() {
-//     console.log(`navEmailValue: ${navEmailValue}`);
-// }
+window.addEventListener('scroll', ()  => {
+  let current = '';
 
-const copyContentNav = async () => {
-    try {
-        await navigator.clipboard.writeText(navEmailValue);
-        navEmailElement.innerText = "Copied!";
-        setTimeout(() => {
-            navEmailElement.innerText = "saadafmohsin@gmail.com";
-            navEmailElement.blur();
-        }, 999);
-        console.log("Content copied to clipboard");
-    } catch (err) {
-        console.error("Failed to copy: ", err);
+  navSections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute('id');
     }
-}
+  });
+
+  navLinks.forEach(link => {
+    // link.classList.remove
+  })
+
+})
+
+
+
+
 
 /**
  * Enable clients to send emails
