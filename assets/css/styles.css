@@ -954,6 +954,22 @@ a query b/w 320px - 480px but rarely any phones have width
         align-items: center;
     }
 
+    /* .nav-li>a {
+        color: var(--sea-green);
+        text-decoration: none !important;
+        padding: 0;
+    } */
+    
+    .nav-li>a:hover {
+        color: var(--sea-green);
+        transition: 0s;
+    }
+    
+    .nav-li>a:not(:hover) {
+        color: var(--sea-green);
+        transition: 0s;
+    }
+
     #location {
         line-height: 1.65em;
     }
