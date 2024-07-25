@@ -73,24 +73,9 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', ()  => {
   let current = '';
-
-  navSections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  navLinks.forEach(link => {
-    if (link.getAttribute('href') === '#' + current) {
-      link.classList.add('override-nav-link');
-      console.log("added class 'override-nav-link'")
-    } else {
-      link.classList.remove('override-nav-link');
-      console.log("removed class 'override-nav-link'")
-    }
-  });
+  /**
+   * TODO
+   */
 });
 
 
