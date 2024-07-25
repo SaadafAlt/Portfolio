@@ -932,9 +932,9 @@ footer {
         width: 100%;
     }
 
-    #copy-email-btn:hover {
+    /* #copy-email-btn:hover {
         border: none;
-    }
+    } */
     
     #copy-email-btn:focus {
         outline-style: none;
@@ -961,13 +961,14 @@ a query b/w 320px - 480px but rarely any phones have width
     } */
     
     .nav-li>a:hover {
-        color: var(--sea-green);
-        transition: 0s;
+        /* color: var(--sea-green); */
+        color: var(--slate-grey);
+        transition: 0.5s;
     }
     
     .nav-li>a:not(:hover) {
-        color: var(--sea-green);
-        transition: 0s;
+        /* color: var(--sea-green); */
+        transition: 0.5s;
     }
 
     #location {
