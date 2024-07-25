@@ -22,7 +22,8 @@ function runSticky() {
 }
 
 /**
- * Write to the system clipboard IOW copy to clipboard
+ * Write to the system clipboard aka copy to clipboard.
+ * For Contact section.
  */
 const emailElement = document.getElementById("my-email");
 const emailValue = emailElement.innerText;
@@ -41,6 +42,30 @@ const copyContent = async () => {
     console.error("Failed to copy: ", err);
   }
 };
+
+/**
+ * Write to the system clipboard aka copy to clipboard.
+ * For email in navbar.
+ */
+const navEmailElement = document.getElementById("nav-email");
+const navEmailValue = navEmailElement.innerText;
+
+// function copyContentNav() {
+//     console.log(`navEmailValue: ${navEmailValue}`);
+// }
+
+const copyContentNav = async () => {
+    try {
+        await navigator.clipboard.writeText(navEmailValue);
+        navEmailElement.innerText = "Copied!";
+        setTimeout(() => {
+            navEmailElement.innerText = "saadafmohsin@gmail.com";
+        }, 999);
+        console.log("Content copied to clipboard");
+    } catch (err) {
+        console.error("Failed to copy: ", err);
+    }
+}
 
 /**
  * Enable clients to send emails
