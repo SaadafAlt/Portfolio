@@ -121,6 +121,10 @@ body {
     transition: 0.5s;
 }
 
+.override-nav-link {
+    color: var(--sea-green);
+}
+
 #location {
     color: var(--slate-grey);
     font-size: 0.85em;
@@ -138,17 +142,11 @@ body {
 }
 
 #navbar-email-btn:hover {
-    /* color: var(--transparent-sage); */
     cursor: pointer;
 }
 
-/* #navbar-email-btn:not(:hover) {
-    color: var(--slate-grey);
-    } */
-
 #navbar-email-btn:active {
     color: #bbc9bda2;
-
 }
 
 #navbar-email-btn:focus {

@@ -83,10 +83,15 @@ window.addEventListener('scroll', ()  => {
   });
 
   navLinks.forEach(link => {
-    // link.classList.remove
-  })
-
-})
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('override-nav-link');
+      console.log("added class 'override-nav-link'")
+    } else {
+      link.classList.remove('override-nav-link');
+      console.log("removed class 'override-nav-link'")
+    }
+  });
+});
 
 
 
