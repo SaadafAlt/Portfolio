@@ -14,9 +14,6 @@ It all really kicked off when I saw the image of the _Nothing_ phone, and how it
 HTML, CSS, JavaScript, and Figma.
 <br>
 
-# Bugs 
-- As users scroll through each section, highlight the respective `li` in the navbar to indicate to the user that they have navigated to a different section
-
 # Additions
 - Add a section describing technologies used/are familiar with
 - For home section, apply smooth slide-in text transition animation to text and img
