@@ -137,7 +137,7 @@ body {
 }
 
 #navbar-email-btn:hover {
-    color: var(--transparent-sage);
+    /* color: var(--transparent-sage); */
     cursor: pointer;
 }
 
@@ -531,7 +531,6 @@ body {
 #copy-email-btn:focus {
     outline-style: solid;
     outline-color: rgba(0, 190, 0, 0);
-    /* TODO: use JS setTimeout to reset the properties */
     outline-offset: 10px;
 }
 
@@ -965,6 +964,14 @@ footer {
     #submit-btn {
         width: 100%;
     }
+
+    #copy-email-btn:hover {
+        border: none;
+    }
+    
+    #copy-email-btn:focus {
+        outline-style: none;
+    }
 }
 
 /* Mobile Devices – 360px — 480px */
@@ -1057,10 +1064,6 @@ a query b/w 320px - 480px but rarely any phones have width
         text-align: justify;
     }
 
-    /* #exempli-gratia {
-        font-size: 0.9em;
-    } */
-
     #about-imgs-div {
         padding-bottom: 5px;
     }
@@ -1077,7 +1080,6 @@ a query b/w 320px - 480px but rarely any phones have width
     }
 
     /* contact */
-
     form {
         font-size: 0.75em;
         padding: 1em 50px 10em;
@@ -1097,5 +1099,13 @@ a query b/w 320px - 480px but rarely any phones have width
 
     #copy-email-btn {
         font-size: 1.85em;
+    }
+
+    #copy-email-btn:hover {
+        border: none;
+    }
+    
+    #copy-email-btn:focus {
+        outline-style: none;
     }
 }
