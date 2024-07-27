@@ -17,3 +17,4 @@ HTML, CSS, JavaScript, and Figma.
 # Additions
 - Add a section describing technologies used/are familiar with
 - For home section, apply smooth slide-in text transition animation to text and img
+- tooltips for social links (desktop only, so think of an alternative for mobile)
